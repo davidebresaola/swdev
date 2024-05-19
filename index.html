@@ -13,6 +13,7 @@
             flex-direction: column;
             min-height: 100vh;
             color: #fff;
+            background-color: #000;
         }
         header {
             background-color: #333;
@@ -26,7 +27,6 @@
         .main {
             display: flex;
             flex: 1;
-            background-color: #000;
             background-image: url('img/cat.jpg');
             background-size: contain;
             background-repeat: no-repeat;
@@ -82,6 +82,21 @@
         }
         .chapter p {
             margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .index {
+                display: none;
+            }
+            .container {
+                margin: 0 10px;
+                padding: 0;
+            }
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
@@ -907,6 +922,82 @@
                         Not entering the loop, One iteration, More than one
                         iteration.</p>
                 </div>
+                <div class="chapter" id="bpmn">
+                    <h2>Business Process Modelling</h2>
+                    <p>TODO</p>
+                </div>
+                <div class="chapter" id="android">
+                    <h2>Android</h2>
+                    <p>TODO</p>
+                </div>
+                <div class="chapter" id="advancedTesting">
+                    <h2>Software Testing – Advanced Topics</h2>
+                    <h3>Dynamic Analysis</h3>
+                    <p><strong>Property-Based Testing:</strong> Derive automatic
+                        test cases using Jqwik for Java. Jqwik is able to
+                        generate
+                        objects of most Java types.</p>
+                    <ul>
+                        <li><code>@Property</code> defines the method running
+                            the
+                            PBT</li>
+                        <li><code>@ForAll</code> generates random values for the
+                            enclosed variable</li>
+                    </ul>
+                    <p>Example: <code>Arbitraries.integers().between(1,
+                            300).filter(anInt -> anInt % 6 == 0)</code></p>
+                    <p>Patterns for finding properties include:</p>
+                    <ul>
+                        <li>Business rule as property</li>
+                        <li>Inverse, Idempotent, Invariant functions,
+                            Commutativity</li>
+                        <li>Test oracle</li>
+                        <li>Hard to compute, but easy to verify</li>
+                        <li>Induction</li>
+                        <li>Stateful testing</li>
+                        <li>Fuzzing</li>
+                    </ul>
+                    <p><strong>Mutation Testing:</strong> A mutant is a copy of
+                        the
+                        original program with a small artificial change. Its
+                        behaviors and outputs differ from those of the original.
+                        If
+                        your tests fail, the mutation is killed; if your tests
+                        pass,
+                        the mutation survived. PITest runs your unit tests
+                        against
+                        automatically modified versions of your code.</p>
+
+                    <h3>Static Analysis</h3>
+                    <p><strong>Compilation analysis:</strong> Compilers check
+                        for
+                        syntax, types, and semantic correctness.</p>
+                    <p><strong>Data Flow Analysis:</strong> Analyzes the values
+                        of
+                        variables during execution. Three operations on
+                        variables:
+                        definition, use, nullification.</p>
+                    <p><strong>Symbolic Execution:</strong></p>
+                    <ul>
+                        <li><strong>Static:</strong> The program is executed
+                            with
+                            symbolic values instead of actual values. Determine
+                            all
+                            the path conditions (path constraints) by
+                            propagating
+                            symbolic input values along the path.</li>
+                        <li><strong>Dynamic:</strong> A random test case
+                            collects
+                            symbolic constraints along the executed path,
+                            negates
+                            the branch condition in the path, and generates a
+                            new
+                            test input for the negated constraint.</li>
+                    </ul>
+                    <p><strong>Inspections:</strong> Reading documents/code to
+                        find
+                        defects.</p>
+                </div>
                 <div class="chapter" id="testing_process">
                     <h2>Integration and System Testing</h2>
                     <p>Integration and System Testing are applied to an
@@ -992,7 +1083,7 @@
                     <img src="img/testin_process.png"
                         alt="Testing process"
                         style="max-width: 100%; height: auto;">
-                </div>
+                </div>                
                 <div class="chapter" id="junit5">
                     <h2>JUnit 5</h2>
                     <p>JUnit 5 introduces several new features and improvements
@@ -1046,7 +1137,6 @@
                                 <code>Map</code>)</li>
                         </ul>
                     </ul>
-
                     <p><strong>AssertJ Fluent Assertions:</strong> Provides a
                         single
                         <code>assertThat(actual)</code> method, which returns an
@@ -1107,124 +1197,62 @@
                         </ul>
                     </ul>
                 </div>
-                <div class="chapter" id="advancedTesting">
-                    <h2>Software Testing – Advanced Topics</h2>
-                    <h3>Dynamic Analysis</h3>
-                    <p><strong>Property-Based Testing:</strong> Derive automatic
-                        test cases using Jqwik for Java. Jqwik is able to
-                        generate
-                        objects of most Java types.</p>
-                    <ul>
-                        <li><code>@Property</code> defines the method running
-                            the
-                            PBT</li>
-                        <li><code>@ForAll</code> generates random values for the
-                            enclosed variable</li>
-                    </ul>
-                    <p>Example: <code>Arbitraries.integers().between(1,
-                            300).filter(anInt -> anInt % 6 == 0)</code></p>
-                    <p>Patterns for finding properties include:</p>
-                    <ul>
-                        <li>Business rule as property</li>
-                        <li>Inverse, Idempotent, Invariant functions,
-                            Commutativity</li>
-                        <li>Test oracle</li>
-                        <li>Hard to compute, but easy to verify</li>
-                        <li>Induction</li>
-                        <li>Stateful testing</li>
-                        <li>Fuzzing</li>
-                    </ul>
-                    <p><strong>Mutation Testing:</strong> A mutant is a copy of
-                        the
-                        original program with a small artificial change. Its
-                        behaviors and outputs differ from those of the original.
-                        If
-                        your tests fail, the mutation is killed; if your tests
-                        pass,
-                        the mutation survived. PITest runs your unit tests
-                        against
-                        automatically modified versions of your code.</p>
+                <div class="chapter" id="performance">
+                    <h2>Performance Testing</h2>
+                        <p>Non-functional testing, where the performance of the
+                            application is evaluated under expected or higher
+                            load.</p>
+                        <ul>
+                            <li><strong>Throughput:</strong> Number of requests
+                                processed in a specified time duration.</li>
+                            <li><strong>Response Time:</strong> Time taken to
+                                complete
+                                each transaction.</li>
+                            <li>Memory/network, CPU usage</li>
+                        </ul>
+                        <p><strong>Tuning:</strong> Product performance is enhanced
+                            by
+                            setting different values to the parameters without
+                            touching
+                            source code.</p>
+                        <p><strong>Benchmarking:</strong> Comparison across
+                            competitive
+                            products.</p>
+                        <p><strong>Load Testing:</strong> Increasing the load on the
+                            system.</p>
+                        <p><strong>Stress Testing:</strong> Overwhelming resources
+                            or
+                            removing resources to ensure the system fails and
+                            recovers.</p>
+                        <p><strong>Spike Testing:</strong> Increasing the load
+                            abruptly,
+                            then measuring performance at the peak and at zero
+                            load.</p>
+                        <p><strong>Endurance Testing:</strong> Testing performance
+                            under
+                            certain load conditions over an extended period.</p>
+                        <p><strong>Volume Testing:</strong> Testing with huge
+                            amounts of
+                            data and analyzing response time.</p>
+                        <p><strong>Scalability Testing:</strong> Testing the ability
+                            of
+                            software to scale up with increasing workload and data
+                            traffic.</p>
+                        <ul>
+                            <li><strong>Upward Scalability Testing:</strong>
+                                Expanding
+                                the number of users until a crash point.</li>
+                            <li><strong>Downward Scalability Testing:</strong> When
+                                load
+                                testing fails, decreasing the number of users.</li>
+                        </ul>
+                        <p><strong>Apache JMeter:</strong> Load testing functional
+                            behavior and measuring performance.</p>
+                </div>
+                <div class="chapter" id="eai">
+                    <h2>Enterprise Application Integration</h2>
+                    <p>TODO</p>
 
-                    <h3>Static Analysis</h3>
-                    <p><strong>Compilation analysis:</strong> Compilers check
-                        for
-                        syntax, types, and semantic correctness.</p>
-                    <p><strong>Data Flow Analysis:</strong> Analyzes the values
-                        of
-                        variables during execution. Three operations on
-                        variables:
-                        definition, use, nullification.</p>
-                    <p><strong>Symbolic Execution:</strong></p>
-                    <ul>
-                        <li><strong>Static:</strong> The program is executed
-                            with
-                            symbolic values instead of actual values. Determine
-                            all
-                            the path conditions (path constraints) by
-                            propagating
-                            symbolic input values along the path.</li>
-                        <li><strong>Dynamic:</strong> A random test case
-                            collects
-                            symbolic constraints along the executed path,
-                            negates
-                            the branch condition in the path, and generates a
-                            new
-                            test input for the negated constraint.</li>
-                    </ul>
-                    <p><strong>Inspections:</strong> Reading documents/code to
-                        find
-                        defects.</p>
-
-                    <h3>Performance Testing:</h3>
-                    <p>Non-functional testing, where the performance of the
-                        application is evaluated under expected or higher
-                        load.</p>
-                    <ul>
-                        <li><strong>Throughput:</strong> Number of requests
-                            processed in a specified time duration.</li>
-                        <li><strong>Response Time:</strong> Time taken to
-                            complete
-                            each transaction.</li>
-                        <li>Memory/network, CPU usage</li>
-                    </ul>
-                    <p><strong>Tuning:</strong> Product performance is enhanced
-                        by
-                        setting different values to the parameters without
-                        touching
-                        source code.</p>
-                    <p><strong>Benchmarking:</strong> Comparison across
-                        competitive
-                        products.</p>
-                    <p><strong>Load Testing:</strong> Increasing the load on the
-                        system.</p>
-                    <p><strong>Stress Testing:</strong> Overwhelming resources
-                        or
-                        removing resources to ensure the system fails and
-                        recovers.</p>
-                    <p><strong>Spike Testing:</strong> Increasing the load
-                        abruptly,
-                        then measuring performance at the peak and at zero
-                        load.</p>
-                    <p><strong>Endurance Testing:</strong> Testing performance
-                        under
-                        certain load conditions over an extended period.</p>
-                    <p><strong>Volume Testing:</strong> Testing with huge
-                        amounts of
-                        data and analyzing response time.</p>
-                    <p><strong>Scalability Testing:</strong> Testing the ability
-                        of
-                        software to scale up with increasing workload and data
-                        traffic.</p>
-                    <ul>
-                        <li><strong>Upward Scalability Testing:</strong>
-                            Expanding
-                            the number of users until a crash point.</li>
-                        <li><strong>Downward Scalability Testing:</strong> When
-                            load
-                            testing fails, decreasing the number of users.</li>
-                    </ul>
-                    <p><strong>Apache JMeter:</strong> Load testing functional
-                        behavior and measuring performance.</p>
                 </div>
                 <div class="chapter" id="agile">
                     <h2>Agile Methodologies</h2>
@@ -1623,6 +1651,9 @@
             </div>
         </div>
     </div>
+    <footer>
+        &copy; 2024 Davide Bresaola. All rights reserved.
+    </footer>
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             const chapters = document.querySelectorAll('.chapter');
