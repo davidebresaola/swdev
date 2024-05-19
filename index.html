@@ -434,6 +434,134 @@
                         incoming messages without blocking the main
                         application.</p>
                 </div>
+                <div class="chapter" id="gui">
+                    <h2>Java GUI</h2>
+                    <p>The Java GUI (Graphical User Interface) follows the
+                        Model-View-Controller (MVC) architecture:</p>
+                    <ul>
+                        <li><strong>Model:</strong> Application logic separated
+                            from
+                            the user interface.</li>
+                        <li><strong>View:</strong> Places graphical elements
+                            (visual
+                            aspect).</li>
+                        <li><strong>Controller:</strong> Associates behavior to
+                            elements events.</li>
+                    </ul>
+                    <p>Important Java GUI components and their usage:</p>
+                    <ul>
+                        <li><strong>JFrame:</strong>
+                            <ul>
+                                <li>Base class for creating a window.</li>
+                                <li>By default, closing the window doesn't
+                                    terminate
+                                    the application. Use
+                                    <code>setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</code>
+                                    to terminate the application on close.</li>
+                            </ul>
+                        </li>
+                        <li><strong>JButton(String text):</strong> A button
+                            component that can hold text.</li>
+                        <li><strong>JLabel(String text, int alignment):</strong>
+                            A
+                            label with text and alignment options
+                            (SwingConstants.LEFT, RIGHT, CENTER).</li>
+                        <li><strong>JTextField(String text, int size):</strong>
+                            A
+                            single-line text field.</li>
+                        <li><strong>JTextArea(String text, int rows, int
+                                columns):</strong> A multi-line text area. Use
+                            <code>setLineWrap(boolean)</code> and
+                            <code>setWrapStyleWord(boolean)</code> for
+                            wrapping.</li>
+                        <li><strong>JScrollPane(Component component):</strong>
+                            Adds
+                            scroll bars to a component.</li>
+                        <li><strong>JList(Object[] data):</strong> Displays a
+                            list
+                            of items.</li>
+                        <li><strong>JCheckBox(String text, boolean
+                                selected):</strong> A checkbox component.</li>
+                        <li><strong>JRadioButton(String text, boolean
+                                selected):</strong> A radio button
+                            component.</li>
+                        <li><strong>ButtonGroup:</strong> Ensures mutual
+                            exclusion
+                            for a group of radio buttons or checkboxes.</li>
+                        <li><strong>JOptionPane:</strong> Provides standard
+                            dialog
+                            boxes:
+                            <ul>
+                                <li><code>JOptionPane.showMessageDialog(frame,
+                                        "Message");</code> to show a message
+                                    dialog.</li>
+                                <li><code>JOptionPane.showOptionDialog</code>
+                                    for
+                                    choices.</li>
+                                <li><code>JOptionPane.showInputDialog</code> to
+                                    prompt for user input.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Layout Managers:</p>
+                    <ul>
+                        <li><strong>FlowLayout:</strong> Arranges components
+                            from
+                            left to right.</li>
+                        <li><strong>GridLayout(int rows, int cols):</strong>
+                            Arranges components in a grid.</li>
+                        <li><strong>BorderLayout:</strong> Divides the container
+                            into five regions: NORTH, SOUTH, EAST, WEST, and
+                            CENTER.</li>
+                        <li><strong>GridBagLayout:</strong> A flexible layout
+                            manager that aligns components vertically and
+                            horizontally, using a GridBagConstraints
+                            object.</li>
+                    </ul>
+                    <p>Event Handling:</p>
+                    <ul>
+                        <li>Common events: MouseEvent, KeyEvent, ActionEvent,
+                            AdjustmentEvent (scroll bars), FocusEvent,
+                            ItemEvent,
+                            MouseMotionEvent, WindowEvent.</li>
+                        <li>Example: <code>aButton.addActionListener(e ->
+                                doClick(),
+                                this);</code></li>
+                    </ul>
+                    <p>Listener Interfaces:</p>
+                    <ul>
+                        <li><strong>ActionListener:</strong> Override
+                            <code>actionPerformed</code> method.</li>
+                        <li><strong>FocusListener:</strong> Methods:
+                            <code>focusGained</code>,
+                            <code>focusLost</code>.</li>
+                        <li><strong>ItemListener:</strong> Method:
+                            <code>itemStateChanged</code>.</li>
+                        <li><strong>MouseListener:</strong> Methods:
+                            <code>mouseClicked</code>,
+                            <code>mouseEntered</code>,
+                            <code>mouseExited</code>, <code>mousePressed</code>,
+                            <code>mouseReleased</code>.</li>
+                        <li><strong>MouseMotionListener:</strong> Methods:
+                            <code>mouseDragged</code>,
+                            <code>mouseMoved</code>.</li>
+                        <li><strong>KeyListener:</strong> Methods:
+                            <code>keyPressed</code>, <code>keyReleased</code>,
+                            <code>keyTyped</code>.</li>
+                        <li><strong>WindowListener:</strong> Handles window
+                            events.</li>
+                    </ul>
+                    <p>Direct Drawing:</p>
+                    <ul>
+                        <li>Requires a callback method: <code>void
+                                paint(Graphics
+                                g)</code> provides methods to draw.</li>
+                        <li>Use <code>repaint()</code> to invoke
+                            <code>paint()</code> and update the view when
+                            something
+                            changes.</li>
+                    </ul>
+                </div>
                 <div class="chapter" id="streams">
                     <h2>Streams</h2>
                     <p>TODO</p>
@@ -1098,6 +1226,172 @@
                     <p><strong>Apache JMeter:</strong> Load testing functional
                         behavior and measuring performance.</p>
                 </div>
+                <div class="chapter" id="agile">
+                    <h2>Agile Methodologies</h2>
+                    <h3>Waterfall Method</h3>
+                    <p>The Waterfall methodology is plan-driven and is suitable
+                        for
+                        large projects with well-understood and stable
+                        requirements.
+                        It involves limited changes and is less responsive to
+                        changing needs.</p>
+
+                    <h3>Incremental Development</h3>
+                    <p>Incremental development involves developing the software
+                        in
+                        stages: initial, intermediate, and final versions. This
+                        approach reduces the cost of changes, allows customer
+                        interaction, and supports rapid delivery. However, it
+                        has
+                        some disadvantages:</p>
+                    <ul>
+                        <li>Not a visible process</li>
+                        <li>Structure tends to degrade over time</li>
+                        <li>Frequent refactoring is needed</li>
+                    </ul>
+
+                    <h3>Incremental Delivery</h3>
+                    <p>Incremental delivery involves deploying increments for
+                        end-users, allowing for a more realistic evaluation of
+                        the
+                        software. However, it can be difficult to apply in
+                        replacement systems.</p>
+
+                    <h3>Integration and Configuration</h3>
+                    <p>This approach emphasizes software reuse and integration
+                        from
+                        existing components.</p>
+
+                    <h3>Agile Methods</h3>
+                    <p>Agile methodologies focus on the rapid delivery of
+                        software,
+                        minimizing documentation, and emphasizing the code to
+                        avoid
+                        software failure and reduce overheads. Key principles of
+                        Agile methods include:</p>
+                    <ul>
+                        <li>Customer involvement</li>
+                        <li>Incremental delivery</li>
+                        <li>People over processes</li>
+                        <li>Embrace changes</li>
+                        <li>Maintain simplicity</li>
+                    </ul>
+
+                    <h3>Extreme Programming (XP)</h3>
+                    <p>Extreme Programming (XP) is an Agile method that
+                        emphasizes
+                        the rapid development and delivery of software. Key
+                        practices of XP include:</p>
+                    <ul>
+                        <li>Releasing new versions several times a day</li>
+                        <li>Delivering increments every two weeks</li>
+                        <li>Running tests for every build</li>
+                        <li>Constant code refactoring</li>
+                        <li>Using user stories for requirements</li>
+                        <li>Pair programming (two developers working together on
+                            the
+                            same code)</li>
+                    </ul>
+                </div>
+                <div class="chapter" id="scrum">
+                    <h2>SCRUM</h2>
+                    <p>SCRUM is an agile method that focuses on managing
+                        iterative
+                        development. It consists of three phases:</p>
+                    <ol>
+                        <li>Outline planning: Involves defining objectives and
+                            software architecture.</li>
+                        <li>Series of sprint cycles.</li>
+                        <li>Closure phase: Wraps up the project, including
+                            documentation.</li>
+                    </ol>
+                    <p>Benefits of SCRUM include breaking the product down into
+                        understandable chunks and allowing the customer to see
+                        one-time delivery of increments.</p>
+                    <p>The Product Owner controls the Product Backlog.</p>
+                    <img src="img/scrum.png"
+                        alt="Verification and Validation Techniques"
+                        style="max-width: 100%; height: auto;">
+                    <h3>Roles:</h3>
+                    <ul>
+                        <li><strong>Product Owner:</strong> Controls the
+                            priority of
+                            the team's backlog, working closely with
+                            stakeholders.</li>
+                        <li><strong>Scrum Master:</strong> Their goal is to
+                            produce
+                            a self-organizing team.</li>
+                        <li><strong>Team member:</strong> Each member is
+                            self-organizing.</li>
+                    </ul>
+                    <p>The <strong>Product Backlog</strong> is responsible for
+                        the
+                        ordering of stories (description of desired
+                        functionality)
+                        and any changes. It is the property of the Product
+                        Owner.</p>
+                    <p>The <strong>Sprint Backlog</strong> consists of committed
+                        stories and additional tasks. It is the property of the
+                        team.</p>
+                </div>
+                <div class="chapter" id="devops">
+                    <h2>DevOps</h2>
+                    <p>DevOps provides automation to enable efficient collection
+                        and
+                        organization of data and communication of the data to
+                        appropriate actors without human intervention. Key
+                        aspects
+                        of DevOps include:</p>
+                    <ul>
+                        <li>Alignment of development and operations teams
+                            towards
+                            the same goal.</li>
+                        <li>Focus on faster collaboration, often seeking
+                            automation
+                            wherever possible.</li>
+                        <li>Utilization of automation to handle deployment
+                            processes.</li>
+                        <li>Integration of reusable tools and components to
+                            streamline workflows.</li>
+                        <li>Encouragement of collaboration across disciplines
+                            within
+                            the organization.</li>
+                        <li>Development and testing against a production-like
+                            system
+                            environment.</li>
+                        <li>Adoption of iterative and frequent deployments using
+                            repeatable and reliable processes.</li>
+                        <li>Continuous validation of operational quality
+                            characteristics.</li>
+                        <li>Emphasis on increasing feedback loops to improve
+                            efficiency and effectiveness.</li>
+                    </ul>
+                </div>
+                <div class="chapter" id="continuous-deployment">
+                    <h2>Continuous Deployment</h2>
+                    <p>Continuous Deployment involves building pipelines that
+                        streamline the entire engineering organization, from
+                        development to QA to operations. Key features of
+                        continuous
+                        deployment include:</p>
+                    <ul>
+                        <li>Implementation of pipelines to automate and optimize
+                            the
+                            flow of code from development through testing to
+                            production deployment.</li>
+                        <li>Integration of automated testing and quality
+                            assurance
+                            processes into the deployment pipeline.</li>
+                        <li>Emphasis on fast and reliable deployments, often
+                            with
+                            minimal human intervention.</li>
+                        <li>Continuous monitoring and feedback loops to identify
+                            and
+                            address issues promptly.</li>
+                        <li>Focus on scalability and resilience to ensure the
+                            stability of deployed systems.</li>
+                    </ul>
+                </div>
                 <div class="chapter" id="aspectOriented">
                     <h2>Aspect Oriented Programming</h2>
                     <p>Aspect Oriented Programming (AOP) provides the key
@@ -1325,300 +1619,6 @@
                     <p>A Knowledge Base of Horn clauses can be represented with
                         an
                         AND-OR graph.</p>
-                </div>
-                <div class="chapter" id="gui">
-                    <h2>Java GUI</h2>
-                    <p>The Java GUI (Graphical User Interface) follows the
-                        Model-View-Controller (MVC) architecture:</p>
-                    <ul>
-                        <li><strong>Model:</strong> Application logic separated
-                            from
-                            the user interface.</li>
-                        <li><strong>View:</strong> Places graphical elements
-                            (visual
-                            aspect).</li>
-                        <li><strong>Controller:</strong> Associates behavior to
-                            elements events.</li>
-                    </ul>
-                    <p>Important Java GUI components and their usage:</p>
-                    <ul>
-                        <li><strong>JFrame:</strong>
-                            <ul>
-                                <li>Base class for creating a window.</li>
-                                <li>By default, closing the window doesn't
-                                    terminate
-                                    the application. Use
-                                    <code>setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</code>
-                                    to terminate the application on close.</li>
-                            </ul>
-                        </li>
-                        <li><strong>JButton(String text):</strong> A button
-                            component that can hold text.</li>
-                        <li><strong>JLabel(String text, int alignment):</strong>
-                            A
-                            label with text and alignment options
-                            (SwingConstants.LEFT, RIGHT, CENTER).</li>
-                        <li><strong>JTextField(String text, int size):</strong>
-                            A
-                            single-line text field.</li>
-                        <li><strong>JTextArea(String text, int rows, int
-                                columns):</strong> A multi-line text area. Use
-                            <code>setLineWrap(boolean)</code> and
-                            <code>setWrapStyleWord(boolean)</code> for
-                            wrapping.</li>
-                        <li><strong>JScrollPane(Component component):</strong>
-                            Adds
-                            scroll bars to a component.</li>
-                        <li><strong>JList(Object[] data):</strong> Displays a
-                            list
-                            of items.</li>
-                        <li><strong>JCheckBox(String text, boolean
-                                selected):</strong> A checkbox component.</li>
-                        <li><strong>JRadioButton(String text, boolean
-                                selected):</strong> A radio button
-                            component.</li>
-                        <li><strong>ButtonGroup:</strong> Ensures mutual
-                            exclusion
-                            for a group of radio buttons or checkboxes.</li>
-                        <li><strong>JOptionPane:</strong> Provides standard
-                            dialog
-                            boxes:
-                            <ul>
-                                <li><code>JOptionPane.showMessageDialog(frame,
-                                        "Message");</code> to show a message
-                                    dialog.</li>
-                                <li><code>JOptionPane.showOptionDialog</code>
-                                    for
-                                    choices.</li>
-                                <li><code>JOptionPane.showInputDialog</code> to
-                                    prompt for user input.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p>Layout Managers:</p>
-                    <ul>
-                        <li><strong>FlowLayout:</strong> Arranges components
-                            from
-                            left to right.</li>
-                        <li><strong>GridLayout(int rows, int cols):</strong>
-                            Arranges components in a grid.</li>
-                        <li><strong>BorderLayout:</strong> Divides the container
-                            into five regions: NORTH, SOUTH, EAST, WEST, and
-                            CENTER.</li>
-                        <li><strong>GridBagLayout:</strong> A flexible layout
-                            manager that aligns components vertically and
-                            horizontally, using a GridBagConstraints
-                            object.</li>
-                    </ul>
-                    <p>Event Handling:</p>
-                    <ul>
-                        <li>Common events: MouseEvent, KeyEvent, ActionEvent,
-                            AdjustmentEvent (scroll bars), FocusEvent,
-                            ItemEvent,
-                            MouseMotionEvent, WindowEvent.</li>
-                        <li>Example: <code>aButton.addActionListener(e ->
-                                doClick(),
-                                this);</code></li>
-                    </ul>
-                    <p>Listener Interfaces:</p>
-                    <ul>
-                        <li><strong>ActionListener:</strong> Override
-                            <code>actionPerformed</code> method.</li>
-                        <li><strong>FocusListener:</strong> Methods:
-                            <code>focusGained</code>,
-                            <code>focusLost</code>.</li>
-                        <li><strong>ItemListener:</strong> Method:
-                            <code>itemStateChanged</code>.</li>
-                        <li><strong>MouseListener:</strong> Methods:
-                            <code>mouseClicked</code>,
-                            <code>mouseEntered</code>,
-                            <code>mouseExited</code>, <code>mousePressed</code>,
-                            <code>mouseReleased</code>.</li>
-                        <li><strong>MouseMotionListener:</strong> Methods:
-                            <code>mouseDragged</code>,
-                            <code>mouseMoved</code>.</li>
-                        <li><strong>KeyListener:</strong> Methods:
-                            <code>keyPressed</code>, <code>keyReleased</code>,
-                            <code>keyTyped</code>.</li>
-                        <li><strong>WindowListener:</strong> Handles window
-                            events.</li>
-                    </ul>
-                    <p>Direct Drawing:</p>
-                    <ul>
-                        <li>Requires a callback method: <code>void
-                                paint(Graphics
-                                g)</code> provides methods to draw.</li>
-                        <li>Use <code>repaint()</code> to invoke
-                            <code>paint()</code> and update the view when
-                            something
-                            changes.</li>
-                    </ul>
-                </div>
-                <div class="chapter" id="agile">
-                    <h2>Agile Methodologies</h2>
-                    <h3>Waterfall Method</h3>
-                    <p>The Waterfall methodology is plan-driven and is suitable
-                        for
-                        large projects with well-understood and stable
-                        requirements.
-                        It involves limited changes and is less responsive to
-                        changing needs.</p>
-
-                    <h3>Incremental Development</h3>
-                    <p>Incremental development involves developing the software
-                        in
-                        stages: initial, intermediate, and final versions. This
-                        approach reduces the cost of changes, allows customer
-                        interaction, and supports rapid delivery. However, it
-                        has
-                        some disadvantages:</p>
-                    <ul>
-                        <li>Not a visible process</li>
-                        <li>Structure tends to degrade over time</li>
-                        <li>Frequent refactoring is needed</li>
-                    </ul>
-
-                    <h3>Incremental Delivery</h3>
-                    <p>Incremental delivery involves deploying increments for
-                        end-users, allowing for a more realistic evaluation of
-                        the
-                        software. However, it can be difficult to apply in
-                        replacement systems.</p>
-
-                    <h3>Integration and Configuration</h3>
-                    <p>This approach emphasizes software reuse and integration
-                        from
-                        existing components.</p>
-
-                    <h3>Agile Methods</h3>
-                    <p>Agile methodologies focus on the rapid delivery of
-                        software,
-                        minimizing documentation, and emphasizing the code to
-                        avoid
-                        software failure and reduce overheads. Key principles of
-                        Agile methods include:</p>
-                    <ul>
-                        <li>Customer involvement</li>
-                        <li>Incremental delivery</li>
-                        <li>People over processes</li>
-                        <li>Embrace changes</li>
-                        <li>Maintain simplicity</li>
-                    </ul>
-
-                    <h3>Extreme Programming (XP)</h3>
-                    <p>Extreme Programming (XP) is an Agile method that
-                        emphasizes
-                        the rapid development and delivery of software. Key
-                        practices of XP include:</p>
-                    <ul>
-                        <li>Releasing new versions several times a day</li>
-                        <li>Delivering increments every two weeks</li>
-                        <li>Running tests for every build</li>
-                        <li>Constant code refactoring</li>
-                        <li>Using user stories for requirements</li>
-                        <li>Pair programming (two developers working together on
-                            the
-                            same code)</li>
-                    </ul>
-                </div>
-                <div class="chapter" id="scrum">
-                    <h2>SCRUM</h2>
-                    <p>SCRUM is an agile method that focuses on managing
-                        iterative
-                        development. It consists of three phases:</p>
-                    <ol>
-                        <li>Outline planning: Involves defining objectives and
-                            software architecture.</li>
-                        <li>Series of sprint cycles.</li>
-                        <li>Closure phase: Wraps up the project, including
-                            documentation.</li>
-                    </ol>
-                    <p>Benefits of SCRUM include breaking the product down into
-                        understandable chunks and allowing the customer to see
-                        one-time delivery of increments.</p>
-                    <p>The Product Owner controls the Product Backlog.</p>
-                    <img src="img/scrum.png"
-                        alt="Verification and Validation Techniques"
-                        style="max-width: 100%; height: auto;">
-                    <h3>Roles:</h3>
-                    <ul>
-                        <li><strong>Product Owner:</strong> Controls the
-                            priority of
-                            the team's backlog, working closely with
-                            stakeholders.</li>
-                        <li><strong>Scrum Master:</strong> Their goal is to
-                            produce
-                            a self-organizing team.</li>
-                        <li><strong>Team member:</strong> Each member is
-                            self-organizing.</li>
-                    </ul>
-                    <p>The <strong>Product Backlog</strong> is responsible for
-                        the
-                        ordering of stories (description of desired
-                        functionality)
-                        and any changes. It is the property of the Product
-                        Owner.</p>
-                    <p>The <strong>Sprint Backlog</strong> consists of committed
-                        stories and additional tasks. It is the property of the
-                        team.</p>
-                </div>
-                <div class="chapter" id="devops">
-                    <h2>DevOps</h2>
-                    <p>DevOps provides automation to enable efficient collection
-                        and
-                        organization of data and communication of the data to
-                        appropriate actors without human intervention. Key
-                        aspects
-                        of DevOps include:</p>
-                    <ul>
-                        <li>Alignment of development and operations teams
-                            towards
-                            the same goal.</li>
-                        <li>Focus on faster collaboration, often seeking
-                            automation
-                            wherever possible.</li>
-                        <li>Utilization of automation to handle deployment
-                            processes.</li>
-                        <li>Integration of reusable tools and components to
-                            streamline workflows.</li>
-                        <li>Encouragement of collaboration across disciplines
-                            within
-                            the organization.</li>
-                        <li>Development and testing against a production-like
-                            system
-                            environment.</li>
-                        <li>Adoption of iterative and frequent deployments using
-                            repeatable and reliable processes.</li>
-                        <li>Continuous validation of operational quality
-                            characteristics.</li>
-                        <li>Emphasis on increasing feedback loops to improve
-                            efficiency and effectiveness.</li>
-                    </ul>
-                </div>
-                <div class="chapter" id="continuous-deployment">
-                    <h2>Continuous Deployment</h2>
-                    <p>Continuous Deployment involves building pipelines that
-                        streamline the entire engineering organization, from
-                        development to QA to operations. Key features of
-                        continuous
-                        deployment include:</p>
-                    <ul>
-                        <li>Implementation of pipelines to automate and optimize
-                            the
-                            flow of code from development through testing to
-                            production deployment.</li>
-                        <li>Integration of automated testing and quality
-                            assurance
-                            processes into the deployment pipeline.</li>
-                        <li>Emphasis on fast and reliable deployments, often
-                            with
-                            minimal human intervention.</li>
-                        <li>Continuous monitoring and feedback loops to identify
-                            and
-                            address issues promptly.</li>
-                        <li>Focus on scalability and resilience to ensure the
-                            stability of deployed systems.</li>
-                    </ul>
                 </div>
             </div>
         </div>
