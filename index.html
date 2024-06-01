@@ -1095,927 +1095,1222 @@
                                     flow.</li>
                                 <li><strong>Complex Gateway:</strong> Can
                                     perform both splitting and joining.</li>
+                                <li>For more information, visit <a
+                                        href="https://www.sysplorer.com/gateway-nel-linguaggio-bpmn"
+                                        target="_blank">this page</a>.
+                                </ul>
+                                <li><strong>Swimlanes:</strong></li>
+                                <ul>
+                                    <li><strong>Pool:</strong> Represents a
+                                        participant (business entity) in a
+                                        process.</li>
+                                    <li><strong>Lane:</strong> A sub-partition
+                                        of a
+                                        pool.</li>
+                                </ul>
+                                <li><strong>Artifacts:</strong></li>
+                                <ul>
+                                    <li><strong>Data Object:</strong> Provides
+                                        information about what activities need
+                                        to be
+                                        performed and what they produce.</li>
+                                    <li><strong>Group</strong></li>
+                                    <li><strong>Text Annotation</strong></li>
+                                </ul>
                             </ul>
-                            <li><strong>Swimlanes:</strong></li>
+                        </div>
+                        <div class="chapter" id="wfms">
+                            <h2>Workflow Management Systems (WFMS)</h2>
+                            <p>The Workflow Management Coalition (WFMC) defines
+                                standards for Workflow Management Systems
+                                (WFMS).
+                                These systems have five main functions:</p>
                             <ul>
-                                <li><strong>Pool:</strong> Represents a
-                                    participant (business entity) in a
+                                <li>Business process execution</li>
+                                <li>Documents/Activity assignment</li>
+                                <li>Monitoring and control</li>
+                                <li>Notification and queues</li>
+                                <li>Task assignments and automation</li>
+                            </ul>
+                            <p>WFMS main features include:</p>
+                            <ul>
+                                <li><strong>Build-time functions:</strong>
+                                    Process
+                                    and activities design.</li>
+                                <li><strong>Run-time control functions:</strong>
+                                    Business process execution and activation of
+                                    activities.</li>
+                                <li><strong>Run-time interactions:</strong>
+                                    Interactions among different activities in a
+                                    business process.</li>
+                            </ul>
+                            <p><strong>Process Definition:</strong></p>
+                            <ul>
+                                <li>A diagram (BPMN or UML Activity
+                                    diagram)</li>
+                                <li>Process’ start/stop criteria</li>
+                                <li>Activity data</li>
+                                <li>Participants (actors): Each participant has
+                                    a
+                                    worklist of tasks to be done</li>
+                                <li>Documents and related data</li>
+                                <li>External applications used by the
+                                    process</li>
+                            </ul>
+                            <p><strong>System Architecture:</strong></p>
+                            <p>The Workflow Engine, which can be varied, is used
+                                to
+                                execute a business process and interact with
+                                software applications through the Workflow
+                                Application Programming Interface (WAPI).</p>
+                            <p><strong>Workflow Interoperability
+                                    Models:</strong></p>
+                            <ul>
+                                <li><strong>Chained-Services Model:</strong>
+                                    Allows
+                                    transferring a single activity between two
+                                    WFMS
+                                    engines that work independently.</li>
+                                <li><strong>Nested Process Model:</strong> An
+                                    activity of a process is executed as another
                                     process.</li>
-                                <li><strong>Lane:</strong> A sub-partition of a
-                                    pool.</li>
+                                <li><strong>Peer-to-Peer Model:</strong> Shared
+                                    execution of a process.</li>
+                                <li><strong>Synchronized Parallel
+                                        Model:</strong>
+                                    Two processes work independently; one waits
+                                    for
+                                    the other when the synchronization point is
+                                    reached.</li>
                             </ul>
-                            <li><strong>Artifacts:</strong></li>
+                        </div>
+
+                        <div class="chapter" id="android">
+                            <h2>Android APP development</h2>
+                            <p>Android applications are written using the
+                                Android
+                                SDK and can support Java, Kotlin, and C++. The
+                                code,
+                                data, and resources are compiled into an APK
+                                file,
+                                which runs on the Android OS (Linux-based). Each
+                                app
+                                operates in a sandbox environment: only that app
+                                can
+                                access its files, and each app runs in its own
+                                virtual machine and process. Apps target a
+                                minimal
+                                “API level” to ensure compatibility with the
+                                Android
+                                OS version.</p>
+
+                            <h3>Android Architecture</h3>
+                            <h4>Apps</h4>
                             <ul>
-                                <li><strong>Data Object:</strong> Provides
-                                    information about what activities need to be
-                                    performed and what they produce.</li>
-                                <li><strong>Group</strong></li>
-                                <li><strong>Text Annotation</strong></li>
+                                <li><strong>Android app:</strong> Created solely
+                                    using the Android API and downloadable from
+                                    the
+                                    Google Play Store.</li>
+                                <li><strong>Privileged app:</strong> Created
+                                    using a
+                                    combination of the Android and system APIs.
+                                    These apps must be preinstalled.</li>
+                                <li><strong>Device manufacturer app:</strong>
+                                    Created using a mix of Android API, system
+                                    API,
+                                    and direct access to the Android framework
+                                    implementation. These apps are preinstalled
+                                    and
+                                    updated when the device is updated.</li>
                             </ul>
-                        </ul>
-                    </div>
-                    <div class="chapter" id="wfms">
-                        <h2>Workflow Management Systems (WFMS)</h2>
-                        <p>The Workflow Management Coalition (WFMC) defines
-                            standards for Workflow Management Systems (WFMS).
-                            These systems have five main functions:</p>
-                        <ul>
-                            <li>Business process execution</li>
-                            <li>Documents/Activity assignment</li>
-                            <li>Monitoring and control</li>
-                            <li>Notification and queues</li>
-                            <li>Task assignments and automation</li>
-                        </ul>
-                        <p>WFMS main features include:</p>
-                        <ul>
-                            <li><strong>Build-time functions:</strong> Process
-                                and activities design.</li>
-                            <li><strong>Run-time control functions:</strong>
-                                Business process execution and activation of
-                                activities.</li>
-                            <li><strong>Run-time interactions:</strong>
-                                Interactions among different activities in a
-                                business process.</li>
-                        </ul>
-                        <p><strong>Process Definition:</strong></p>
-                        <ul>
-                            <li>A diagram (BPMN or UML Activity diagram)</li>
-                            <li>Process’ start/stop criteria</li>
-                            <li>Activity data</li>
-                            <li>Participants (actors): Each participant has a
-                                worklist of tasks to be done</li>
-                            <li>Documents and related data</li>
-                            <li>External applications used by the process</li>
-                        </ul>
-                        <p><strong>System Architecture:</strong></p>
-                        <p>The Workflow Engine, which can be varied, is used to
-                            execute a business process and interact with
-                            software applications through the Workflow
-                            Application Programming Interface (WAPI).</p>
-                        <p><strong>Workflow Interoperability
-                                Models:</strong></p>
-                        <ul>
-                            <li><strong>Chained-Services Model:</strong> Allows
-                                transferring a single activity between two WFMS
-                                engines that work independently.</li>
-                            <li><strong>Nested Process Model:</strong> An
-                                activity of a process is executed as another
-                                process.</li>
-                            <li><strong>Peer-to-Peer Model:</strong> Shared
-                                execution of a process.</li>
-                            <li><strong>Synchronized Parallel Model:</strong>
-                                Two processes work independently; one waits for
-                                the other when the synchronization point is
-                                reached.</li>
-                        </ul>
-                    </div>
 
-                    <div class="chapter" id="android">
-                        <h2>Android</h2>
-                        <p>TODO</p>
-                    </div>
-                    <div class="chapter" id="advancedTesting">
-                        <h2>Software Testing – Advanced Topics</h2>
-                        <h3>Dynamic Analysis</h3>
-                        <p><strong>Property-Based Testing:</strong> Derive
-                            automatic
-                            test cases using Jqwik for Java. Jqwik is able to
-                            generate
-                            objects of most Java types.</p>
-                        <ul>
-                            <li><code>@Property</code> defines the method
-                                running
-                                the
-                                PBT</li>
-                            <li><code>@ForAll</code> generates random values for
-                                the
-                                enclosed variable</li>
-                        </ul>
-                        <p>Example: <code>Arbitraries.integers().between(1,
-                                300).filter(anInt -> anInt % 6 == 0)</code></p>
-                        <p>Patterns for finding properties include:</p>
-                        <ul>
-                            <li>Business rule as property</li>
-                            <li>Inverse, Idempotent, Invariant functions,
-                                Commutativity</li>
-                            <li>Test oracle</li>
-                            <li>Hard to compute, but easy to verify</li>
-                            <li>Induction</li>
-                            <li>Stateful testing</li>
-                            <li>Fuzzing</li>
-                        </ul>
-                        <p><strong>Mutation Testing:</strong> A mutant is a copy
-                            of
-                            the
-                            original program with a small artificial change. Its
-                            behaviors and outputs differ from those of the
-                            original.
-                            If
-                            your tests fail, the mutation is killed; if your
-                            tests
-                            pass,
-                            the mutation survived. PITest runs your unit tests
-                            against
-                            automatically modified versions of your code.</p>
+                            <h4>APIs and Services</h4>
+                            <ul>
+                                <li><strong>Android API:</strong> Publicly
+                                    available
+                                    API for third-party Android app
+                                    developers.</li>
+                                <li><strong>Android framework:</strong> A group
+                                    of
+                                    Java classes, interfaces, and other
+                                    precompiled
+                                    code upon which apps are built. Parts of the
+                                    framework are publicly accessible through
+                                    the
+                                    Android API, while other parts are available
+                                    only to OEMs through system APIs. Android
+                                    framework code runs inside an app's
+                                    process.</li>
+                                <li><strong>System services:</strong> Modular,
+                                    focused components such as system_server,
+                                    SurfaceFlinger, and MediaService.
+                                    Functionality
+                                    exposed by the Android framework API
+                                    communicates with system services to access
+                                    the
+                                    underlying hardware.</li>
+                            </ul>
 
-                        <h3>Static Analysis</h3>
-                        <p><strong>Compilation analysis:</strong> Compilers
-                            check
-                            for
-                            syntax, types, and semantic correctness.</p>
-                        <p><strong>Data Flow Analysis:</strong> Analyzes the
-                            values
-                            of
-                            variables during execution. Three operations on
-                            variables:
-                            definition, use, nullification.</p>
-                        <p><strong>Symbolic Execution:</strong></p>
-                        <ul>
-                            <li><strong>Static:</strong> The program is executed
-                                with
-                                symbolic values instead of actual values.
-                                Determine
-                                all
-                                the path conditions (path constraints) by
-                                propagating
-                                symbolic input values along the path.</li>
-                            <li><strong>Dynamic:</strong> A random test case
-                                collects
-                                symbolic constraints along the executed path,
-                                negates
-                                the branch condition in the path, and generates
-                                a
-                                new
-                                test input for the negated constraint.</li>
-                        </ul>
-                        <p><strong>Inspections:</strong> Reading documents/code
-                            to
-                            find
-                            defects.</p>
-                    </div>
-                    <div class="chapter" id="testing_process">
-                        <h2>Integration and System Testing</h2>
-                        <p>Integration and System Testing are applied to an
-                            aggregation
-                            of two or more units/modules to find faults
-                            concerning
-                            the
-                            interoperation of units and the aggregate whole
-                            functions.</p>
-                        <ul>
-                            <li><strong>Driver:</strong> A unit program or
-                                module
-                                that
-                                invokes the component or module being tested.
-                                The
-                                driver
-                                acts as a substitute for the missing
-                                components.</li>
-                            <li><strong>Stub:</strong> A simplified
-                                implementation
-                                of a
-                                unit developed to substitute a not yet available
-                                unit.</li>
-                        </ul>
-                        <h3>Testing Strategies</h3>
-                        <ul>
-                            <li><strong>Top-down testing:</strong> Allows early
-                                detection of architectural flaws and requires
+                            <h4>ART and HAL</h4>
+                            <ul>
+                                <li><strong>Android Runtime (ART):</strong>
+                                    Performs
+                                    the translation of the app's bytecode into
+                                    processor-specific instructions executed by
+                                    the
+                                    device's runtime environment. It includes
+                                    features like ahead-of-time (AOT)
+                                    compilation to
+                                    improve app performance and a single garbage
+                                    collection pause independent of heap
+                                    size.</li>
+                                <li><strong>Hardware Abstraction Layer
+                                        (HAL):</strong> Allows you to implement
+                                    functionality without affecting or modifying
+                                    the
+                                    higher-level system.</li>
+                            </ul>
+
+                            <h4>Android NDK</h4>
+                            <p>The Android NDK is used to build apps in native
+                                code.</p>
+
+                            <h4>App Structure</h4>
+                            <ul>
+                                <li><strong>Android Code:</strong> Contains all
+                                    the
+                                    logic of the app.</li>
+                                <li><strong>Resources:</strong> Each resource
+                                    (e.g.,
+                                    pictures, UI layout, icons, strings) is
+                                    assigned
+                                    a unique ID.</li>
+                                <li><strong>AndroidManifest.xml file:</strong>
+                                    provides essential information about the
+                                    app,
+                                    declares
+                                    application components, requests
+                                    permissions,
+                                    declares app requirements, and contains app
+                                    metadata and API level information.</li>
+                            </ul>
+
+                            <h4>Components</h4>
+                            <ul>
+                                <li><strong>Activities:</strong> Represent
+                                    "screens"
+                                    with a UI.</li>
+                                <li><strong>Services:</strong> Run tasks in the
+                                    background with no direct UI and can be
+                                    started
+                                    by an activity.</li>
+                                <li><strong>Broadcast Receivers:</strong> Allow
+                                    the
+                                    OS to deliver events to the app even when it
+                                    is
+                                    not running.</li>
+                                <li><strong>Content Providers:</strong> Manage a
+                                    shared set of app data. Allowed apps can
+                                    query
+                                    or modify the data, identified by a URI
+                                    (secure
+                                    way to pass content).</li>
+                            </ul>
+
+                            <h4>Intents</h4>
+                            <p>Intents are asynchronous messages used to request
+                                an
+                                action from another app component. They
+                                facilitate
+                                communication between different components or
+                                apps
+                                (e.g., launching activities, starting services,
+                                and
+                                broadcasting messages).</p>
+                            <ul>
+                                <li><strong>Explicit Intents:</strong> Used to
+                                    launch a specific component, such as a
+                                    specific
+                                    activity within the same app.</li>
+                                <li><strong>Implicit Intents:</strong> Declare a
+                                    general action to perform, allowing any app
+                                    that
+                                    can handle that action to respond, such as
+                                    opening a web page in a browser.</li>
+                            </ul>
+
+                            <h4>UI Design</h4>
+                            <p>The layout (ViewGroup) defines the structure of
                                 the
-                                definition of stubs for lower-level units.</li>
-                            <li><strong>Bottom-up testing:</strong> Testing can
-                                start
-                                early, lower levels are directly observable, and
-                                it
-                                requires the definition of drivers for
-                                lower-level
-                                units.</li>
-                        </ul>
-                        <h3>Testing Process</h3>
-                        <ul>
-                            <li><strong>Production testing:</strong> Test
-                                products
-                                as
-                                they are made.</li>
-                            <li><strong>Regression testing:</strong> Repeat
+                                UI. Elements can be declared in XML or code, and
+                                all View objects have a unique identifier
+                                assigned
+                                at compile time. Attributes include
+                                <code>LayoutParameters</code>, which define how
+                                Views appear.</p>
+                        </div>
+                        <div class="chapter" id="advancedTesting">
+                            <h2>Software Testing – Advanced Topics</h2>
+                            <h3>Dynamic Analysis</h3>
+                            <p><strong>Property-Based Testing:</strong> Derive
+                                automatic
+                                test cases using Jqwik for Java. Jqwik is able
+                                to
+                                generate
+                                objects of most Java types.</p>
+                            <ul>
+                                <li><code>@Property</code> defines the method
+                                    running
+                                    the
+                                    PBT</li>
+                                <li><code>@ForAll</code> generates random values
+                                    for
+                                    the
+                                    enclosed variable</li>
+                            </ul>
+                            <p>Example: <code>Arbitraries.integers().between(1,
+                                    300).filter(anInt -> anInt % 6 ==
+                                    0)</code></p>
+                            <p>Patterns for finding properties include:</p>
+                            <ul>
+                                <li>Business rule as property</li>
+                                <li>Inverse, Idempotent, Invariant functions,
+                                    Commutativity</li>
+                                <li>Test oracle</li>
+                                <li>Hard to compute, but easy to verify</li>
+                                <li>Induction</li>
+                                <li>Stateful testing</li>
+                                <li>Fuzzing</li>
+                            </ul>
+                            <p><strong>Mutation Testing:</strong> A mutant is a
+                                copy
+                                of
+                                the
+                                original program with a small artificial change.
+                                Its
+                                behaviors and outputs differ from those of the
+                                original.
+                                If
+                                your tests fail, the mutation is killed; if your
                                 tests
-                                after
-                                any change.</li>
-                            <li><strong>Acceptance testing:</strong> Data and
-                                test
-                                cases
-                                provided by the customer.</li>
-                            <li><strong>Beta-testing:</strong> Conducted with a
-                                selected
-                                group of potential customers.</li>
-                        </ul>
-                        <h3>Planning and Specification Documents</h3>
-                        <ul>
-                            <li><strong>TP (Test Plan):</strong> Establish a
-                                plan
-                                and
-                                schedule, define required resources, define
-                                pass/fail
-                                criteria, and explain each test.</li>
-                            <li><strong>TDS (Test Design
-                                    Specification):</strong>
-                                Outlines techniques, analysis of results,
-                                motivation,
-                                and generic attributes.</li>
-                            <li><strong>TCS (Test Case Specification):</strong>
-                                Specifies a test case in terms of input data,
-                                expected
-                                output, and test conditions (required hardware
-                                and
-                                software).</li>
-                            <li><strong>TPS (Test Procedure
-                                    Specification):</strong>
-                                Details how to execute test cases.</li>
-                        </ul>
-                        <h3>Execution Deliverables</h3>
-                        <ul>
-                            <li>Test item report</li>
-                            <li>Test log</li>
-                            <li>Incident report</li>
-                            <li>Summary report</li>
-                        </ul>
-                        <h3>Test-Driven Development (TDD)</h3>
-                        <p>In TDD, test cases are written before the
-                            implementation
-                            code.</p>
-                        <h3>Benefits of TDD</h3>
-                        <ul>
-                            <li>Code coverage</li>
-                            <li>Regression testing</li>
-                            <li>Simplified debugging</li>
-                            <li>System documentation</li>
-                        </ul>
-                        <img src="img/testin_process.png"
-                            alt="Testing process"
-                            style="max-width: 100%; height: auto;">
-                    </div>
-                    <div class="chapter" id="junit5">
-                        <h2>JUnit 5</h2>
-                        <p>JUnit 5 introduces several new features and
-                            improvements
-                            over
-                            previous versions. Key highlights include:</p>
-                        <ul>
-                            <li><strong>@BeforeEach/@AfterEach</strong>,
-                                <strong>@BeforeAll/@AfterAll</strong></li>
-                            <li>Test methods are not required to be public</li>
-                            <li>Java 8 support (lambda expressions, extensions,
-                                parameterized tests, etc.)</li>
-                        </ul>
-                        <p>Suites:</p>
-                        <ul>
-                            <li><strong>@RunWith(JUnitPlatform.class)</strong></li>
-                            <li><strong>@SelectClasses({ … })</strong></li>
-                            <li><strong>@SelectPackages({ … })</strong></li>
-                        </ul>
-                        <img src="img/exception_test.png"
-                            alt="Exception test"
-                            style="max-width: 100%; height: auto;">
-                        <h3>Assertion Styles:</h3>
-                        <p><strong>Hamcrest Matchers:</strong> Use
-                            <code>assertThat(value, matcher)</code></p>
-                        <ul>
-                            <li>Matchers:</li>
-                            <ul>
-                                <li><code>equalTo()</code>,
-                                    <code>instanceOf()</code>,
-                                    <code>notNullValue()</code>,
-                                    <code>nullValue()</code>,
-                                    <code>sameInstance()</code></li>
-                                <li>Numbers: <code>closeTo()</code>,
-                                    <code>greaterThan()</code>,
-                                    <code>greaterThanOrEqualTo()</code>,
-                                    <code>lessThan()</code>,
-                                    <code>lessThanOrEqualTo()</code></li>
-                                <li>Logical: <code>allOf()</code>,
-                                    <code>anyOf()</code>,
-                                    <code>not()</code></li>
-                                <li>String: <code>equalToIgnoringCase()</code>,
-                                    <code>equalToIgnoringWhiteSpace()</code>,
-                                    <code>containsString()</code>,
-                                    <code>endsWith()</code>,
-                                    <code>startsWith()</code></li>
-                                <li>Collections: <code>array()</code>,
-                                    <code>hasItemInArray()</code>,
-                                    <code>hasItem()</code>,
-                                    <code>hasItems()</code>,
-                                    <code>hasEntry()</code>,
-                                    <code>hasKey()</code>,
-                                    <code>hasValue()</code> (for
-                                    <code>Map</code>)</li>
-                            </ul>
-                        </ul>
-                        <p><strong>AssertJ Fluent Assertions:</strong> Provides
-                            a
-                            single
-                            <code>assertThat(actual)</code> method, which
-                            returns an
-                            Assert object. The method <code>as()</code> can be
-                            used
-                            to
-                            define a message.</p>
-                        <p>Example:
-                            <code>assertThat(res).as("Checking return value").isNotNull().isEqualTo(expected);</code></p>
-                        <ul>
-                            <li>Object Assertions:</li>
-                            <ul>
-                                <li><code>isEqualTo()</code>,
-                                    <code>isInstanceOf()</code>,
-                                    <code>isNotNull()</code>,
-                                    <code>isNull()</code>,
-                                    <code>isSameAs()</code>,
-                                    <code>returns()</code>,
-                                    <code>hasFieldOrPropertyWithValue()</code>,
-                                    <code>extracting()</code></li>
-                            </ul>
-                            <li>Number Assertions:</li>
-                            <ul>
-                                <li><code>isCloseTo()</code>,
-                                    <code>isGreaterThan()</code>,
-                                    <code>isGreaterThanOrEqualTo()</code>,
-                                    <code>isLessThan()</code>,
-                                    <code>isLessThanOrEqualTo()</code>,
-                                    <code>isBetween()</code></li>
-                            </ul>
-                            <li>String Assertions:</li>
-                            <ul>
-                                <li><code>startsWith()</code>,
-                                    <code>endsWith()</code>,
-                                    <code>contains()</code>,
-                                    <code>doesNotContain()</code>,
-                                    <code>isEqualToIgnoringCase()</code></li>
-                            </ul>
-                            <li>Container Assertions:</li>
-                            <ul>
-                                <li><code>hasSize()</code>,
-                                    <code>hasSizeLessThan()</code>,
-                                    <code>hasSizeGreaterThan()</code>,
-                                    <code>isSorted()</code>,
-                                    <code>contains()</code>,
-                                    <code>containsExactly()</code>,
-                                    <code>extracting()</code>,
-                                    <code>filteredOn()</code></li>
-                            </ul>
-                            <li>Map Assertions:</li>
-                            <ul>
-                                <li><code>containsKeys()</code>,
-                                    <code>containsEntry()</code>,
-                                    <code>contains()</code>,
-                                    <code>entry()</code>,
-                                    <code>extractingFromEntries()</code></li>
-                            </ul>
-                            <li>Exception Assertions:</li>
-                            <ul>
-                                <li><code>assertThatThrownBy()</code>,
-                                    <code>hasMessage()</code></li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="chapter" id="performance">
-                        <h2>Performance Testing</h2>
-                        <p>Non-functional testing, where the performance of the
-                            application is evaluated under expected or higher
-                            load.</p>
-                        <ul>
-                            <li><strong>Throughput:</strong> Number of requests
-                                processed in a specified time duration.</li>
-                            <li><strong>Response Time:</strong> Time taken to
-                                complete
-                                each transaction.</li>
-                            <li>Memory/network, CPU usage</li>
-                        </ul>
-                        <p><strong>Tuning:</strong> Product performance is
-                            enhanced
-                            by
-                            setting different values to the parameters without
-                            touching
-                            source code.</p>
-                        <p><strong>Benchmarking:</strong> Comparison across
-                            competitive
-                            products.</p>
-                        <p><strong>Load Testing:</strong> Increasing the load on
-                            the
-                            system.</p>
-                        <p><strong>Stress Testing:</strong> Overwhelming
-                            resources
-                            or
-                            removing resources to ensure the system fails and
-                            recovers.</p>
-                        <p><strong>Spike Testing:</strong> Increasing the load
-                            abruptly,
-                            then measuring performance at the peak and at zero
-                            load.</p>
-                        <p><strong>Endurance Testing:</strong> Testing
-                            performance
-                            under
-                            certain load conditions over an extended period.</p>
-                        <p><strong>Volume Testing:</strong> Testing with huge
-                            amounts of
-                            data and analyzing response time.</p>
-                        <p><strong>Scalability Testing:</strong> Testing the
-                            ability
-                            of
-                            software to scale up with increasing workload and
-                            data
-                            traffic.</p>
-                        <ul>
-                            <li><strong>Upward Scalability Testing:</strong>
-                                Expanding
-                                the number of users until a crash point.</li>
-                            <li><strong>Downward Scalability Testing:</strong>
-                                When
-                                load
-                                testing fails, decreasing the number of
-                                users.</li>
-                        </ul>
-                        <p><strong>Apache JMeter:</strong> Load testing
-                            functional
-                            behavior and measuring performance.</p>
-                    </div>
-                    <div class="chapter" id="eai">
-                        <h2>Enterprise Application Integration</h2>
-                        <p>TODO</p>
+                                pass,
+                                the mutation survived. PITest runs your unit
+                                tests
+                                against
+                                automatically modified versions of your
+                                code.</p>
 
-                    </div>
-                    <div class="chapter" id="agile">
-                        <h2>Agile Methodologies</h2>
-                        <h3>Waterfall Method</h3>
-                        <p>The Waterfall methodology is plan-driven and is
-                            suitable
-                            for
-                            large projects with well-understood and stable
-                            requirements.
-                            It involves limited changes and is less responsive
-                            to
-                            changing needs.</p>
-
-                        <h3>Incremental Development</h3>
-                        <p>Incremental development involves developing the
-                            software
-                            in
-                            stages: initial, intermediate, and final versions.
-                            This
-                            approach reduces the cost of changes, allows
-                            customer
-                            interaction, and supports rapid delivery. However,
-                            it
-                            has
-                            some disadvantages:</p>
-                        <ul>
-                            <li>Not a visible process</li>
-                            <li>Structure tends to degrade over time</li>
-                            <li>Frequent refactoring is needed</li>
-                        </ul>
-
-                        <h3>Incremental Delivery</h3>
-                        <p>Incremental delivery involves deploying increments
-                            for
-                            end-users, allowing for a more realistic evaluation
-                            of
-                            the
-                            software. However, it can be difficult to apply in
-                            replacement systems.</p>
-
-                        <h3>Integration and Configuration</h3>
-                        <p>This approach emphasizes software reuse and
-                            integration
-                            from
-                            existing components.</p>
-
-                        <h3>Agile Methods</h3>
-                        <p>Agile methodologies focus on the rapid delivery of
-                            software,
-                            minimizing documentation, and emphasizing the code
-                            to
-                            avoid
-                            software failure and reduce overheads. Key
-                            principles of
-                            Agile methods include:</p>
-                        <ul>
-                            <li>Customer involvement</li>
-                            <li>Incremental delivery</li>
-                            <li>People over processes</li>
-                            <li>Embrace changes</li>
-                            <li>Maintain simplicity</li>
-                        </ul>
-
-                        <h3>Extreme Programming (XP)</h3>
-                        <p>Extreme Programming (XP) is an Agile method that
-                            emphasizes
-                            the rapid development and delivery of software. Key
-                            practices of XP include:</p>
-                        <ul>
-                            <li>Releasing new versions several times a day</li>
-                            <li>Delivering increments every two weeks</li>
-                            <li>Running tests for every build</li>
-                            <li>Constant code refactoring</li>
-                            <li>Using user stories for requirements</li>
-                            <li>Pair programming (two developers working
-                                together on
-                                the
-                                same code)</li>
-                        </ul>
-                    </div>
-                    <div class="chapter" id="scrum">
-                        <h2>SCRUM</h2>
-                        <p>SCRUM is an agile method that focuses on managing
-                            iterative
-                            development. It consists of three phases:</p>
-                        <ol>
-                            <li>Outline planning: Involves defining objectives
-                                and
-                                software architecture.</li>
-                            <li>Series of sprint cycles.</li>
-                            <li>Closure phase: Wraps up the project, including
-                                documentation.</li>
-                        </ol>
-                        <p>Benefits of SCRUM include breaking the product down
-                            into
-                            understandable chunks and allowing the customer to
-                            see
-                            one-time delivery of increments.</p>
-                        <p>The Product Owner controls the Product Backlog.</p>
-                        <img src="img/scrum.png"
-                            alt="Verification and Validation Techniques"
-                            style="max-width: 100%; height: auto;">
-                        <h3>Roles:</h3>
-                        <ul>
-                            <li><strong>Product Owner:</strong> Controls the
-                                priority of
-                                the team's backlog, working closely with
-                                stakeholders.</li>
-                            <li><strong>Scrum Master:</strong> Their goal is to
-                                produce
-                                a self-organizing team.</li>
-                            <li><strong>Team member:</strong> Each member is
-                                self-organizing.</li>
-                        </ul>
-                        <p>The <strong>Product Backlog</strong> is responsible
-                            for
-                            the
-                            ordering of stories (description of desired
-                            functionality)
-                            and any changes. It is the property of the Product
-                            Owner.</p>
-                        <p>The <strong>Sprint Backlog</strong> consists of
-                            committed
-                            stories and additional tasks. It is the property of
-                            the
-                            team.</p>
-                    </div>
-                    <div class="chapter" id="devops">
-                        <h2>DevOps</h2>
-                        <p>DevOps provides automation to enable efficient
-                            collection
-                            and
-                            organization of data and communication of the data
-                            to
-                            appropriate actors without human intervention. Key
-                            aspects
-                            of DevOps include:</p>
-                        <ul>
-                            <li>Alignment of development and operations teams
-                                towards
-                                the same goal.</li>
-                            <li>Focus on faster collaboration, often seeking
-                                automation
-                                wherever possible.</li>
-                            <li>Utilization of automation to handle deployment
-                                processes.</li>
-                            <li>Integration of reusable tools and components to
-                                streamline workflows.</li>
-                            <li>Encouragement of collaboration across
-                                disciplines
-                                within
-                                the organization.</li>
-                            <li>Development and testing against a
-                                production-like
-                                system
-                                environment.</li>
-                            <li>Adoption of iterative and frequent deployments
-                                using
-                                repeatable and reliable processes.</li>
-                            <li>Continuous validation of operational quality
-                                characteristics.</li>
-                            <li>Emphasis on increasing feedback loops to improve
-                                efficiency and effectiveness.</li>
-                        </ul>
-                    </div>
-                    <div class="chapter" id="continuous-deployment">
-                        <h2>Continuous Deployment</h2>
-                        <p>Continuous Deployment involves building pipelines
-                            that
-                            streamline the entire engineering organization, from
-                            development to QA to operations. Key features of
-                            continuous
-                            deployment include:</p>
-                        <ul>
-                            <li>Implementation of pipelines to automate and
-                                optimize
-                                the
-                                flow of code from development through testing to
-                                production deployment.</li>
-                            <li>Integration of automated testing and quality
-                                assurance
-                                processes into the deployment pipeline.</li>
-                            <li>Emphasis on fast and reliable deployments, often
-                                with
-                                minimal human intervention.</li>
-                            <li>Continuous monitoring and feedback loops to
-                                identify
-                                and
-                                address issues promptly.</li>
-                            <li>Focus on scalability and resilience to ensure
-                                the
-                                stability of deployed systems.</li>
-                        </ul>
-                    </div>
-                    <div class="chapter" id="aspectOriented">
-                        <h2>Aspect Oriented Programming</h2>
-                        <p>Aspect Oriented Programming (AOP) provides the key
-                            advantage
-                            of separation of concerns, where each program
-                            element
-                            does
-                            only one thing.</p>
-                        <ul>
-                            <li><strong>Scattered code:</strong> Related code is
-                                not
-                                local; the implementation of a concern is
-                                scattered
-                                across several components.</li>
-                            <li><strong>Tangled code:</strong> A module includes
-                                code
-                                that implements different requirements, making
-                                it
-                                difficult to understand and change.</li>
-                            <li><strong>Redundant code:</strong> The same
-                                fragment
+                            <h3>Static Analysis</h3>
+                            <p><strong>Compilation analysis:</strong> Compilers
+                                check
+                                for
+                                syntax, types, and semantic correctness.</p>
+                            <p><strong>Data Flow Analysis:</strong> Analyzes the
+                                values
                                 of
-                                code appears in many places.</li>
-                        </ul>
-                        <p><strong>Concerns:</strong></p>
-                        <ul>
-                            <li><strong>Core concerns:</strong> Functional
-                                concerns
-                                related to the primary purpose of a system.</li>
-                            <li><strong>Secondary concerns:</strong> Functional
-                                concerns
-                                that reflect non-functional and QoS (Quality of
-                                Service)
-                                requirements.</li>
-                        </ul>
-                        <p><strong>Stakeholder concerns:</strong></p>
-                        <ul>
-                            <li>Related to specific functionality</li>
-                            <li>QoS</li>
-                            <li>Policy concerns</li>
-                            <li>System concerns: maintainability and
-                                configurability</li>
-                            <li>Organisational concerns: budget, assets,
-                                repudiation</li>
-                        </ul>
-                        <p><strong>Cross-cutting concerns:</strong> These are
-                            concerns
-                            whose implementation cuts across multiple
-                            components,
-                            leading to tangling and scattering. Examples
-                            include:</p>
-                        <ul>
-                            <li>Logging</li>
-                            <li>Debugging</li>
-                            <li>Profiling (Performance)</li>
-                            <li>Security & Authentication</li>
-                            <li>Exception Handling</li>
-                            <li>Event Handling</li>
-                            <li>Synchronization</li>
-                            <li>Session tracking and expiration</li>
-                            <li>Database connection & Persistence</li>
-                        </ul>
-                        <p>By representing cross-cutting concerns as aspects,
-                            individual
-                            concerns can be understood, reused, and modified
-                            without
-                            changing other parts of the program.</p>
-                        <img src="img/aspect.png"
-                            alt="Verification and Validation Techniques"
-                            style="max-width: 100%; height: auto;">
-                        <p><strong>Obliviousness:</strong> Implicit invocation
-                            of an
-                            aspect.</p>
-                        <p><strong>Benefits of AOP:</strong></p>
-                        <ul>
-                            <li>Better modularity: Localizes cross-cutting
-                                concerns
-                                in
-                                an aspect.</li>
-                            <li>Easier understanding: Less scattered and tangled
-                                code.</li>
-                            <li>Easier modifiability.</li>
-                        </ul>
-                        <p><strong>Advice declarations:</strong></p>
-                        <ul>
-                            <li><strong>Before advice:</strong> Runs when the
-                                join
-                                point
-                                is reached, before the method runs.</li>
+                                variables during execution. Three operations on
+                                variables:
+                                definition, use, nullification.</p>
+                            <p><strong>Symbolic Execution:</strong></p>
                             <ul>
-                                <li>Before call / Before execution</li>
+                                <li><strong>Static:</strong> The program is
+                                    executed
+                                    with
+                                    symbolic values instead of actual values.
+                                    Determine
+                                    all
+                                    the path conditions (path constraints) by
+                                    propagating
+                                    symbolic input values along the path.</li>
+                                <li><strong>Dynamic:</strong> A random test case
+                                    collects
+                                    symbolic constraints along the executed
+                                    path,
+                                    negates
+                                    the branch condition in the path, and
+                                    generates
+                                    a
+                                    new
+                                    test input for the negated constraint.</li>
                             </ul>
-                            <li><strong>After advice:</strong> Runs just after
+                            <p><strong>Inspections:</strong> Reading
+                                documents/code
+                                to
+                                find
+                                defects.</p>
+                        </div>
+                        <div class="chapter" id="testing_process">
+                            <h2>Integration and System Testing</h2>
+                            <p>Integration and System Testing are applied to an
+                                aggregation
+                                of two or more units/modules to find faults
+                                concerning
                                 the
-                                method.</li>
+                                interoperation of units and the aggregate whole
+                                functions.</p>
                             <ul>
-                                <li>After returning: After the method ends
-                                    normally.</li>
-                                <li>After throwing: After the method ends by
-                                    throwing an
-                                    exception.</li>
-                                <li>After: Runs after both previous cases.</li>
+                                <li><strong>Driver:</strong> A unit program or
+                                    module
+                                    that
+                                    invokes the component or module being
+                                    tested.
+                                    The
+                                    driver
+                                    acts as a substitute for the missing
+                                    components.</li>
+                                <li><strong>Stub:</strong> A simplified
+                                    implementation
+                                    of a
+                                    unit developed to substitute a not yet
+                                    available
+                                    unit.</li>
                             </ul>
-                            <li><strong>Around advice:</strong> Runs when the
-                                join
-                                point
-                                is reached and has control over whether the
-                                method
-                                itself runs at all. It surrounds the join point,
-                                can
-                                decide if computation will happen, and can
-                                modify
-                                arguments.</li>
-                        </ul>
-                        <p><strong>ThisJoinPoint:</strong> A feature providing
-                            details
-                            of the join point, such as the source location,
-                            string
-                            representation of the current join point, arguments
-                            of
-                            the
-                            method, target object, etc.</p>
-                    </div>
-                    <div class="chapter" id="springAOP">
-                        <h2>Spring AOP</h2>
-                        <p>Spring AOP (Aspect-Oriented Programming) is a
-                            framework
-                            that
-                            provides an additional way of modularizing
-                            cross-cutting
-                            concerns by separating them from the business
-                            logic.</p>
-                        <ul>
-                            <li><strong>Aspect:</strong> An aspect is a module
-                                of
-                                cross-cutting concerns. It encapsulates
-                                behaviors
-                                that
-                                affect multiple classes or modules in your
-                                application.</li>
-                            <li><strong>Advice:</strong> Advice is the action
-                                taken
+                            <h3>Testing Strategies</h3>
+                            <ul>
+                                <li><strong>Top-down testing:</strong> Allows
+                                    early
+                                    detection of architectural flaws and
+                                    requires
+                                    the
+                                    definition of stubs for lower-level
+                                    units.</li>
+                                <li><strong>Bottom-up testing:</strong> Testing
+                                    can
+                                    start
+                                    early, lower levels are directly observable,
+                                    and
+                                    it
+                                    requires the definition of drivers for
+                                    lower-level
+                                    units.</li>
+                            </ul>
+                            <h3>Testing Process</h3>
+                            <ul>
+                                <li><strong>Production testing:</strong> Test
+                                    products
+                                    as
+                                    they are made.</li>
+                                <li><strong>Regression testing:</strong> Repeat
+                                    tests
+                                    after
+                                    any change.</li>
+                                <li><strong>Acceptance testing:</strong> Data
+                                    and
+                                    test
+                                    cases
+                                    provided by the customer.</li>
+                                <li><strong>Beta-testing:</strong> Conducted
+                                    with a
+                                    selected
+                                    group of potential customers.</li>
+                            </ul>
+                            <h3>Planning and Specification Documents</h3>
+                            <ul>
+                                <li><strong>TP (Test Plan):</strong> Establish a
+                                    plan
+                                    and
+                                    schedule, define required resources, define
+                                    pass/fail
+                                    criteria, and explain each test.</li>
+                                <li><strong>TDS (Test Design
+                                        Specification):</strong>
+                                    Outlines techniques, analysis of results,
+                                    motivation,
+                                    and generic attributes.</li>
+                                <li><strong>TCS (Test Case
+                                        Specification):</strong>
+                                    Specifies a test case in terms of input
+                                    data,
+                                    expected
+                                    output, and test conditions (required
+                                    hardware
+                                    and
+                                    software).</li>
+                                <li><strong>TPS (Test Procedure
+                                        Specification):</strong>
+                                    Details how to execute test cases.</li>
+                            </ul>
+                            <h3>Execution Deliverables</h3>
+                            <ul>
+                                <li>Test item report</li>
+                                <li>Test log</li>
+                                <li>Incident report</li>
+                                <li>Summary report</li>
+                            </ul>
+                            <h3>Test-Driven Development (TDD)</h3>
+                            <p>In TDD, test cases are written before the
+                                implementation
+                                code.</p>
+                            <h3>Benefits of TDD</h3>
+                            <ul>
+                                <li>Code coverage</li>
+                                <li>Regression testing</li>
+                                <li>Simplified debugging</li>
+                                <li>System documentation</li>
+                            </ul>
+                            <img src="img/testin_process.png"
+                                alt="Testing process"
+                                style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="chapter" id="junit5">
+                            <h2>JUnit 5</h2>
+                            <p>JUnit 5 introduces several new features and
+                                improvements
+                                over
+                                previous versions. Key highlights include:</p>
+                            <ul>
+                                <li><strong>@BeforeEach/@AfterEach</strong>,
+                                    <strong>@BeforeAll/@AfterAll</strong></li>
+                                <li>Test methods are not required to be
+                                    public</li>
+                                <li>Java 8 support (lambda expressions,
+                                    extensions,
+                                    parameterized tests, etc.)</li>
+                            </ul>
+                            <p>Suites:</p>
+                            <ul>
+                                <li><strong>@RunWith(JUnitPlatform.class)</strong></li>
+                                <li><strong>@SelectClasses({ … })</strong></li>
+                                <li><strong>@SelectPackages({ … })</strong></li>
+                            </ul>
+                            <img src="img/exception_test.png"
+                                alt="Exception test"
+                                style="max-width: 100%; height: auto;">
+                            <h3>Assertion Styles:</h3>
+                            <p><strong>Hamcrest Matchers:</strong> Use
+                                <code>assertThat(value, matcher)</code></p>
+                            <ul>
+                                <li>Matchers:</li>
+                                <ul>
+                                    <li><code>equalTo()</code>,
+                                        <code>instanceOf()</code>,
+                                        <code>notNullValue()</code>,
+                                        <code>nullValue()</code>,
+                                        <code>sameInstance()</code></li>
+                                    <li>Numbers: <code>closeTo()</code>,
+                                        <code>greaterThan()</code>,
+                                        <code>greaterThanOrEqualTo()</code>,
+                                        <code>lessThan()</code>,
+                                        <code>lessThanOrEqualTo()</code></li>
+                                    <li>Logical: <code>allOf()</code>,
+                                        <code>anyOf()</code>,
+                                        <code>not()</code></li>
+                                    <li>String:
+                                        <code>equalToIgnoringCase()</code>,
+                                        <code>equalToIgnoringWhiteSpace()</code>,
+                                        <code>containsString()</code>,
+                                        <code>endsWith()</code>,
+                                        <code>startsWith()</code></li>
+                                    <li>Collections: <code>array()</code>,
+                                        <code>hasItemInArray()</code>,
+                                        <code>hasItem()</code>,
+                                        <code>hasItems()</code>,
+                                        <code>hasEntry()</code>,
+                                        <code>hasKey()</code>,
+                                        <code>hasValue()</code> (for
+                                        <code>Map</code>)</li>
+                                </ul>
+                            </ul>
+                            <p><strong>AssertJ Fluent Assertions:</strong>
+                                Provides
+                                a
+                                single
+                                <code>assertThat(actual)</code> method, which
+                                returns an
+                                Assert object. The method <code>as()</code> can
+                                be
+                                used
+                                to
+                                define a message.</p>
+                            <p>Example:
+                                <code>assertThat(res).as("Checking return value").isNotNull().isEqualTo(expected);</code></p>
+                            <ul>
+                                <li>Object Assertions:</li>
+                                <ul>
+                                    <li><code>isEqualTo()</code>,
+                                        <code>isInstanceOf()</code>,
+                                        <code>isNotNull()</code>,
+                                        <code>isNull()</code>,
+                                        <code>isSameAs()</code>,
+                                        <code>returns()</code>,
+                                        <code>hasFieldOrPropertyWithValue()</code>,
+                                        <code>extracting()</code></li>
+                                </ul>
+                                <li>Number Assertions:</li>
+                                <ul>
+                                    <li><code>isCloseTo()</code>,
+                                        <code>isGreaterThan()</code>,
+                                        <code>isGreaterThanOrEqualTo()</code>,
+                                        <code>isLessThan()</code>,
+                                        <code>isLessThanOrEqualTo()</code>,
+                                        <code>isBetween()</code></li>
+                                </ul>
+                                <li>String Assertions:</li>
+                                <ul>
+                                    <li><code>startsWith()</code>,
+                                        <code>endsWith()</code>,
+                                        <code>contains()</code>,
+                                        <code>doesNotContain()</code>,
+                                        <code>isEqualToIgnoringCase()</code></li>
+                                </ul>
+                                <li>Container Assertions:</li>
+                                <ul>
+                                    <li><code>hasSize()</code>,
+                                        <code>hasSizeLessThan()</code>,
+                                        <code>hasSizeGreaterThan()</code>,
+                                        <code>isSorted()</code>,
+                                        <code>contains()</code>,
+                                        <code>containsExactly()</code>,
+                                        <code>extracting()</code>,
+                                        <code>filteredOn()</code></li>
+                                </ul>
+                                <li>Map Assertions:</li>
+                                <ul>
+                                    <li><code>containsKeys()</code>,
+                                        <code>containsEntry()</code>,
+                                        <code>contains()</code>,
+                                        <code>entry()</code>,
+                                        <code>extractingFromEntries()</code></li>
+                                </ul>
+                                <li>Exception Assertions:</li>
+                                <ul>
+                                    <li><code>assertThatThrownBy()</code>,
+                                        <code>hasMessage()</code></li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="chapter" id="performance">
+                            <h2>Performance Testing</h2>
+                            <p>Non-functional testing, where the performance of
+                                the
+                                application is evaluated under expected or
+                                higher
+                                load.</p>
+                            <ul>
+                                <li><strong>Throughput:</strong> Number of
+                                    requests
+                                    processed in a specified time duration.</li>
+                                <li><strong>Response Time:</strong> Time taken
+                                    to
+                                    complete
+                                    each transaction.</li>
+                                <li>Memory/network, CPU usage</li>
+                            </ul>
+                            <p><strong>Tuning:</strong> Product performance is
+                                enhanced
                                 by
-                                an aspect at a particular join point. Different
-                                types of
-                                advice include "before," "after," "around,"
-                                "after-returning," and "after-throwing."</li>
-                            <li><strong>Join Point:</strong> A point during the
-                                execution of a program where an aspect can be
-                                plugged
-                                in. In Spring AOP, join points are method
-                                invocations.</li>
-                            <li><strong>Pointcut:</strong> A pointcut is a set
-                                of
-                                one or
-                                more join points where advice should be
-                                executed. It
-                                defines where an aspect should be applied in
-                                your
-                                application.</li>
-                            <li><strong>Introduction:</strong> Introduction
-                                allows
-                                adding new methods or attributes to existing
-                                classes.
-                                This helps in keeping the core concerns
-                                separated
-                                from
-                                cross-cutting concerns.</li>
-                            <li><strong>Weaving:</strong> Weaving is the process
-                                of
-                                integrating aspects into the application code.
-                                This
-                                can
-                                be done at compile time, load time, or
-                                runtime.</li>
-                            <li><strong>Proxy-based:</strong> Spring AOP uses
-                                runtime
-                                proxies to apply aspects to the target objects.
-                                This
-                                means that the AOP functionality is applied at
-                                runtime
-                                and does not require altering the original
-                                class.</li>
-                            <li><strong>Configuration:</strong> Aspects in
-                                Spring
-                                AOP
-                                can be configured either using XML-based
-                                configuration
-                                or annotation-based configuration.</li>
-                            <li><strong>AspectJ integration:</strong> Spring
-                                allows
-                                you
-                                to use AspectJ annotations and expressions for
-                                more
-                                advanced AOP configurations.</li>
-                        </ul>
-                    </div>
-                    <div class="chapter" id="prolog">
-                        <h2>Prolog</h2>
-                        <p>Prolog (PROgramming in LOGic) allows the computer to
-                            solve
-                            problems using principles of logic. It is a
-                            declarative
-                            language, consisting of declarations (statements or
-                            propositions in symbolic logic).</p>
-                        <p>Key concepts in Prolog include:</p>
-                        <ul>
-                            <li><strong>Horn clauses:</strong> If (BODY) then
-                                HEAD</li>
-                            <li><strong>Propositions:</strong> Logical
-                                statements,
-                                e.g.,
-                                <code>likes(john, football)</code></li>
-                            <li><strong>Logical connectors:</strong> Negation,
-                                conjunction, disjunction, equivalence,
-                                implication</li>
-                            <li><strong>Quantifiers:</strong> For all,
-                                exists</li>
-                        </ul>
-                        <p><strong>Resolution:</strong> If the head of horn
-                            clause
-                            #1
-                            matches one of the terms in horn clause #2, then we
-                            can
-                            replace that term with the body of clause #1.</p>
-                        <p><strong>Unification:</strong> Finding values for
-                            variables
-                            during resolution so that the matching process can
-                            succeed.</p>
-                        <p><strong>Instantiation:</strong> Temporary binding of
-                            a
-                            value
-                            (and type) to a variable to allow unification.</p>
-                        <p>Prolog syntax and terminology:</p>
-                        <ul>
-                            <li><strong>Constants:</strong> Start with lowercase
-                                letters</li>
-                            <li><strong>Variables:</strong> Start with uppercase
-                                letters</li>
-                            <li><strong>Query (goal):</strong> <code>?-
-                                    rainy(seattle)</code></li>
-                            <li><strong>Knowledge Base:</strong> Collection of
-                                facts
+                                setting different values to the parameters
+                                without
+                                touching
+                                source code.</p>
+                            <p><strong>Benchmarking:</strong> Comparison across
+                                competitive
+                                products.</p>
+                            <p><strong>Load Testing:</strong> Increasing the
+                                load on
+                                the
+                                system.</p>
+                            <p><strong>Stress Testing:</strong> Overwhelming
+                                resources
+                                or
+                                removing resources to ensure the system fails
                                 and
-                                rules</li>
-                            <li><strong>Facts:</strong> Statements assumed to be
-                                true,
-                                e.g., <code>male(steve)</code></li>
-                            <li><strong>Rules:</strong> Predicates that are true
-                                depending on a given condition, e.g.,
-                                <code>parent(X, Y)
-                                    :- mother(X, Y)</code></li>
-                            <li><strong>Logical connectors:</strong>
-                                <code>AND</code>
-                                (comma), <code>OR</code> (semi-colon)</li>
-                        </ul>
-                        <p><strong>Forward chaining:</strong> (bottom-up) starts
-                            with
-                            each rule and checks the facts. Works more
-                            efficiently
-                            on a
-                            small database.</p>
-                        <p><strong>Backward chaining:</strong> (top-down) starts
-                            with
-                            the facts and uses the rules that apply, using a
-                            depth-first
-                            resolution process (in sequence). Prolog uses
-                            backward
-                            chaining.</p>
-                        <p>A Knowledge Base of Horn clauses can be represented
-                            with
-                            an
-                            AND-OR graph.</p>
+                                recovers.</p>
+                            <p><strong>Spike Testing:</strong> Increasing the
+                                load
+                                abruptly,
+                                then measuring performance at the peak and at
+                                zero
+                                load.</p>
+                            <p><strong>Endurance Testing:</strong> Testing
+                                performance
+                                under
+                                certain load conditions over an extended
+                                period.</p>
+                            <p><strong>Volume Testing:</strong> Testing with
+                                huge
+                                amounts of
+                                data and analyzing response time.</p>
+                            <p><strong>Scalability Testing:</strong> Testing the
+                                ability
+                                of
+                                software to scale up with increasing workload
+                                and
+                                data
+                                traffic.</p>
+                            <ul>
+                                <li><strong>Upward Scalability Testing:</strong>
+                                    Expanding
+                                    the number of users until a crash
+                                    point.</li>
+                                <li><strong>Downward Scalability
+                                        Testing:</strong>
+                                    When
+                                    load
+                                    testing fails, decreasing the number of
+                                    users.</li>
+                            </ul>
+                            <p><strong>Apache JMeter:</strong> Load testing
+                                functional
+                                behavior and measuring performance.</p>
+                        </div>
+                        <div class="chapter" id="eai">
+                            <h2>Enterprise Application Integration</h2>
+                            <p>TODO</p>
+
+                        </div>
+                        <div class="chapter" id="agile">
+                            <h2>Agile Methodologies</h2>
+                            <h3>Waterfall Method</h3>
+                            <p>The Waterfall methodology is plan-driven and is
+                                suitable
+                                for
+                                large projects with well-understood and stable
+                                requirements.
+                                It involves limited changes and is less
+                                responsive
+                                to
+                                changing needs.</p>
+
+                            <h3>Incremental Development</h3>
+                            <p>Incremental development involves developing the
+                                software
+                                in
+                                stages: initial, intermediate, and final
+                                versions.
+                                This
+                                approach reduces the cost of changes, allows
+                                customer
+                                interaction, and supports rapid delivery.
+                                However,
+                                it
+                                has
+                                some disadvantages:</p>
+                            <ul>
+                                <li>Not a visible process</li>
+                                <li>Structure tends to degrade over time</li>
+                                <li>Frequent refactoring is needed</li>
+                            </ul>
+
+                            <h3>Incremental Delivery</h3>
+                            <p>Incremental delivery involves deploying
+                                increments
+                                for
+                                end-users, allowing for a more realistic
+                                evaluation
+                                of
+                                the
+                                software. However, it can be difficult to apply
+                                in
+                                replacement systems.</p>
+
+                            <h3>Integration and Configuration</h3>
+                            <p>This approach emphasizes software reuse and
+                                integration
+                                from
+                                existing components.</p>
+
+                            <h3>Agile Methods</h3>
+                            <p>Agile methodologies focus on the rapid delivery
+                                of
+                                software,
+                                minimizing documentation, and emphasizing the
+                                code
+                                to
+                                avoid
+                                software failure and reduce overheads. Key
+                                principles of
+                                Agile methods include:</p>
+                            <ul>
+                                <li>Customer involvement</li>
+                                <li>Incremental delivery</li>
+                                <li>People over processes</li>
+                                <li>Embrace changes</li>
+                                <li>Maintain simplicity</li>
+                            </ul>
+
+                            <h3>Extreme Programming (XP)</h3>
+                            <p>Extreme Programming (XP) is an Agile method that
+                                emphasizes
+                                the rapid development and delivery of software.
+                                Key
+                                practices of XP include:</p>
+                            <ul>
+                                <li>Releasing new versions several times a
+                                    day</li>
+                                <li>Delivering increments every two weeks</li>
+                                <li>Running tests for every build</li>
+                                <li>Constant code refactoring</li>
+                                <li>Using user stories for requirements</li>
+                                <li>Pair programming (two developers working
+                                    together on
+                                    the
+                                    same code)</li>
+                            </ul>
+                        </div>
+                        <div class="chapter" id="scrum">
+                            <h2>SCRUM</h2>
+                            <p>SCRUM is an agile method that focuses on managing
+                                iterative
+                                development. It consists of three phases:</p>
+                            <ol>
+                                <li>Outline planning: Involves defining
+                                    objectives
+                                    and
+                                    software architecture.</li>
+                                <li>Series of sprint cycles.</li>
+                                <li>Closure phase: Wraps up the project,
+                                    including
+                                    documentation.</li>
+                            </ol>
+                            <p>Benefits of SCRUM include breaking the product
+                                down
+                                into
+                                understandable chunks and allowing the customer
+                                to
+                                see
+                                one-time delivery of increments.</p>
+                            <p>The Product Owner controls the Product
+                                Backlog.</p>
+                            <img src="img/scrum.png"
+                                alt="Verification and Validation Techniques"
+                                style="max-width: 100%; height: auto;">
+                            <h3>Roles:</h3>
+                            <ul>
+                                <li><strong>Product Owner:</strong> Controls the
+                                    priority of
+                                    the team's backlog, working closely with
+                                    stakeholders.</li>
+                                <li><strong>Scrum Master:</strong> Their goal is
+                                    to
+                                    produce
+                                    a self-organizing team.</li>
+                                <li><strong>Team member:</strong> Each member is
+                                    self-organizing.</li>
+                            </ul>
+                            <p>The <strong>Product Backlog</strong> is
+                                responsible
+                                for
+                                the
+                                ordering of stories (description of desired
+                                functionality)
+                                and any changes. It is the property of the
+                                Product
+                                Owner.</p>
+                            <p>The <strong>Sprint Backlog</strong> consists of
+                                committed
+                                stories and additional tasks. It is the property
+                                of
+                                the
+                                team.</p>
+                        </div>
+                        <div class="chapter" id="devops">
+                            <h2>DevOps</h2>
+                            <p>DevOps provides automation to enable efficient
+                                collection
+                                and
+                                organization of data and communication of the
+                                data
+                                to
+                                appropriate actors without human intervention.
+                                Key
+                                aspects
+                                of DevOps include:</p>
+                            <ul>
+                                <li>Alignment of development and operations
+                                    teams
+                                    towards
+                                    the same goal.</li>
+                                <li>Focus on faster collaboration, often seeking
+                                    automation
+                                    wherever possible.</li>
+                                <li>Utilization of automation to handle
+                                    deployment
+                                    processes.</li>
+                                <li>Integration of reusable tools and components
+                                    to
+                                    streamline workflows.</li>
+                                <li>Encouragement of collaboration across
+                                    disciplines
+                                    within
+                                    the organization.</li>
+                                <li>Development and testing against a
+                                    production-like
+                                    system
+                                    environment.</li>
+                                <li>Adoption of iterative and frequent
+                                    deployments
+                                    using
+                                    repeatable and reliable processes.</li>
+                                <li>Continuous validation of operational quality
+                                    characteristics.</li>
+                                <li>Emphasis on increasing feedback loops to
+                                    improve
+                                    efficiency and effectiveness.</li>
+                            </ul>
+                        </div>
+                        <div class="chapter" id="continuous-deployment">
+                            <h2>Continuous Deployment</h2>
+                            <p>Continuous Deployment involves building pipelines
+                                that
+                                streamline the entire engineering organization,
+                                from
+                                development to QA to operations. Key features of
+                                continuous
+                                deployment include:</p>
+                            <ul>
+                                <li>Implementation of pipelines to automate and
+                                    optimize
+                                    the
+                                    flow of code from development through
+                                    testing to
+                                    production deployment.</li>
+                                <li>Integration of automated testing and quality
+                                    assurance
+                                    processes into the deployment pipeline.</li>
+                                <li>Emphasis on fast and reliable deployments,
+                                    often
+                                    with
+                                    minimal human intervention.</li>
+                                <li>Continuous monitoring and feedback loops to
+                                    identify
+                                    and
+                                    address issues promptly.</li>
+                                <li>Focus on scalability and resilience to
+                                    ensure
+                                    the
+                                    stability of deployed systems.</li>
+                            </ul>
+                        </div>
+                        <div class="chapter" id="aspectOriented">
+                            <h2>Aspect Oriented Programming</h2>
+                            <p>Aspect Oriented Programming (AOP) provides the
+                                key
+                                advantage
+                                of separation of concerns, where each program
+                                element
+                                does
+                                only one thing.</p>
+                            <ul>
+                                <li><strong>Scattered code:</strong> Related
+                                    code is
+                                    not
+                                    local; the implementation of a concern is
+                                    scattered
+                                    across several components.</li>
+                                <li><strong>Tangled code:</strong> A module
+                                    includes
+                                    code
+                                    that implements different requirements,
+                                    making
+                                    it
+                                    difficult to understand and change.</li>
+                                <li><strong>Redundant code:</strong> The same
+                                    fragment
+                                    of
+                                    code appears in many places.</li>
+                            </ul>
+                            <p><strong>Concerns:</strong></p>
+                            <ul>
+                                <li><strong>Core concerns:</strong> Functional
+                                    concerns
+                                    related to the primary purpose of a
+                                    system.</li>
+                                <li><strong>Secondary concerns:</strong>
+                                    Functional
+                                    concerns
+                                    that reflect non-functional and QoS (Quality
+                                    of
+                                    Service)
+                                    requirements.</li>
+                            </ul>
+                            <p><strong>Stakeholder concerns:</strong></p>
+                            <ul>
+                                <li>Related to specific functionality</li>
+                                <li>QoS</li>
+                                <li>Policy concerns</li>
+                                <li>System concerns: maintainability and
+                                    configurability</li>
+                                <li>Organisational concerns: budget, assets,
+                                    repudiation</li>
+                            </ul>
+                            <p><strong>Cross-cutting concerns:</strong> These
+                                are
+                                concerns
+                                whose implementation cuts across multiple
+                                components,
+                                leading to tangling and scattering. Examples
+                                include:</p>
+                            <ul>
+                                <li>Logging</li>
+                                <li>Debugging</li>
+                                <li>Profiling (Performance)</li>
+                                <li>Security & Authentication</li>
+                                <li>Exception Handling</li>
+                                <li>Event Handling</li>
+                                <li>Synchronization</li>
+                                <li>Session tracking and expiration</li>
+                                <li>Database connection & Persistence</li>
+                            </ul>
+                            <p>By representing cross-cutting concerns as
+                                aspects,
+                                individual
+                                concerns can be understood, reused, and modified
+                                without
+                                changing other parts of the program.</p>
+                            <img src="img/aspect.png"
+                                alt="Verification and Validation Techniques"
+                                style="max-width: 100%; height: auto;">
+                            <p><strong>Obliviousness:</strong> Implicit
+                                invocation
+                                of an
+                                aspect.</p>
+                            <p><strong>Benefits of AOP:</strong></p>
+                            <ul>
+                                <li>Better modularity: Localizes cross-cutting
+                                    concerns
+                                    in
+                                    an aspect.</li>
+                                <li>Easier understanding: Less scattered and
+                                    tangled
+                                    code.</li>
+                                <li>Easier modifiability.</li>
+                            </ul>
+                            <p><strong>Advice declarations:</strong></p>
+                            <ul>
+                                <li><strong>Before advice:</strong> Runs when
+                                    the
+                                    join
+                                    point
+                                    is reached, before the method runs.</li>
+                                <ul>
+                                    <li>Before call / Before execution</li>
+                                </ul>
+                                <li><strong>After advice:</strong> Runs just
+                                    after
+                                    the
+                                    method.</li>
+                                <ul>
+                                    <li>After returning: After the method ends
+                                        normally.</li>
+                                    <li>After throwing: After the method ends by
+                                        throwing an
+                                        exception.</li>
+                                    <li>After: Runs after both previous
+                                        cases.</li>
+                                </ul>
+                                <li><strong>Around advice:</strong> Runs when
+                                    the
+                                    join
+                                    point
+                                    is reached and has control over whether the
+                                    method
+                                    itself runs at all. It surrounds the join
+                                    point,
+                                    can
+                                    decide if computation will happen, and can
+                                    modify
+                                    arguments.</li>
+                            </ul>
+                            <p><strong>ThisJoinPoint:</strong> A feature
+                                providing
+                                details
+                                of the join point, such as the source location,
+                                string
+                                representation of the current join point,
+                                arguments
+                                of
+                                the
+                                method, target object, etc.</p>
+                        </div>
+                        <div class="chapter" id="springAOP">
+                            <h2>Spring AOP</h2>
+                            <p>Spring AOP (Aspect-Oriented Programming) is a
+                                framework
+                                that
+                                provides an additional way of modularizing
+                                cross-cutting
+                                concerns by separating them from the business
+                                logic.</p>
+                            <ul>
+                                <li><strong>Aspect:</strong> An aspect is a
+                                    module
+                                    of
+                                    cross-cutting concerns. It encapsulates
+                                    behaviors
+                                    that
+                                    affect multiple classes or modules in your
+                                    application.</li>
+                                <li><strong>Advice:</strong> Advice is the
+                                    action
+                                    taken
+                                    by
+                                    an aspect at a particular join point.
+                                    Different
+                                    types of
+                                    advice include "before," "after," "around,"
+                                    "after-returning," and
+                                    "after-throwing."</li>
+                                <li><strong>Join Point:</strong> A point during
+                                    the
+                                    execution of a program where an aspect can
+                                    be
+                                    plugged
+                                    in. In Spring AOP, join points are method
+                                    invocations.</li>
+                                <li><strong>Pointcut:</strong> A pointcut is a
+                                    set
+                                    of
+                                    one or
+                                    more join points where advice should be
+                                    executed. It
+                                    defines where an aspect should be applied in
+                                    your
+                                    application.</li>
+                                <li><strong>Introduction:</strong> Introduction
+                                    allows
+                                    adding new methods or attributes to existing
+                                    classes.
+                                    This helps in keeping the core concerns
+                                    separated
+                                    from
+                                    cross-cutting concerns.</li>
+                                <li><strong>Weaving:</strong> Weaving is the
+                                    process
+                                    of
+                                    integrating aspects into the application
+                                    code.
+                                    This
+                                    can
+                                    be done at compile time, load time, or
+                                    runtime.</li>
+                                <li><strong>Proxy-based:</strong> Spring AOP
+                                    uses
+                                    runtime
+                                    proxies to apply aspects to the target
+                                    objects.
+                                    This
+                                    means that the AOP functionality is applied
+                                    at
+                                    runtime
+                                    and does not require altering the original
+                                    class.</li>
+                                <li><strong>Configuration:</strong> Aspects in
+                                    Spring
+                                    AOP
+                                    can be configured either using XML-based
+                                    configuration
+                                    or annotation-based configuration.</li>
+                                <li><strong>AspectJ integration:</strong> Spring
+                                    allows
+                                    you
+                                    to use AspectJ annotations and expressions
+                                    for
+                                    more
+                                    advanced AOP configurations.</li>
+                            </ul>
+                        </div>
+                        <div class="chapter" id="prolog">
+                            <h2>Prolog</h2>
+                            <p>Prolog (PROgramming in LOGic) allows the computer
+                                to
+                                solve
+                                problems using principles of logic. It is a
+                                declarative
+                                language, consisting of declarations (statements
+                                or
+                                propositions in symbolic logic).</p>
+                            <p>Key concepts in Prolog include:</p>
+                            <ul>
+                                <li><strong>Horn clauses:</strong> If (BODY)
+                                    then
+                                    HEAD</li>
+                                <li><strong>Propositions:</strong> Logical
+                                    statements,
+                                    e.g.,
+                                    <code>likes(john, football)</code></li>
+                                <li><strong>Logical connectors:</strong>
+                                    Negation,
+                                    conjunction, disjunction, equivalence,
+                                    implication</li>
+                                <li><strong>Quantifiers:</strong> For all,
+                                    exists</li>
+                            </ul>
+                            <p><strong>Resolution:</strong> If the head of horn
+                                clause
+                                #1
+                                matches one of the terms in horn clause #2, then
+                                we
+                                can
+                                replace that term with the body of clause
+                                #1.</p>
+                            <p><strong>Unification:</strong> Finding values for
+                                variables
+                                during resolution so that the matching process
+                                can
+                                succeed.</p>
+                            <p><strong>Instantiation:</strong> Temporary binding
+                                of
+                                a
+                                value
+                                (and type) to a variable to allow
+                                unification.</p>
+                            <p>Prolog syntax and terminology:</p>
+                            <ul>
+                                <li><strong>Constants:</strong> Start with
+                                    lowercase
+                                    letters</li>
+                                <li><strong>Variables:</strong> Start with
+                                    uppercase
+                                    letters</li>
+                                <li><strong>Query (goal):</strong> <code>?-
+                                        rainy(seattle)</code></li>
+                                <li><strong>Knowledge Base:</strong> Collection
+                                    of
+                                    facts
+                                    and
+                                    rules</li>
+                                <li><strong>Facts:</strong> Statements assumed
+                                    to be
+                                    true,
+                                    e.g., <code>male(steve)</code></li>
+                                <li><strong>Rules:</strong> Predicates that are
+                                    true
+                                    depending on a given condition, e.g.,
+                                    <code>parent(X, Y)
+                                        :- mother(X, Y)</code></li>
+                                <li><strong>Logical connectors:</strong>
+                                    <code>AND</code>
+                                    (comma), <code>OR</code> (semi-colon)</li>
+                            </ul>
+                            <p><strong>Forward chaining:</strong> (bottom-up)
+                                starts
+                                with
+                                each rule and checks the facts. Works more
+                                efficiently
+                                on a
+                                small database.</p>
+                            <p><strong>Backward chaining:</strong> (top-down)
+                                starts
+                                with
+                                the facts and uses the rules that apply, using a
+                                depth-first
+                                resolution process (in sequence). Prolog uses
+                                backward
+                                chaining.</p>
+                            <p>A Knowledge Base of Horn clauses can be
+                                represented
+                                with
+                                an
+                                AND-OR graph.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer>
-            &copy; 2024 Davide Bresaola. All rights reserved.
-        </footer>
-        <script>
+            <footer>
+                &copy; 2024 Davide Bresaola. All rights reserved.
+            </footer>
+            <script>
         window.addEventListener('DOMContentLoaded', function() {
             const chapters = document.querySelectorAll('.chapter');
             const index = document.getElementById('index').querySelector('ul');
@@ -2032,5 +2327,5 @@
             });
         });
     </script>
-    </body>
-</html>
+        </body>
+    </html>
